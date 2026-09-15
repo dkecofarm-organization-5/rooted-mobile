@@ -1,0 +1,26 @@
+{
+  "release": "ROOTED KR/EN/RU Integrated Exhibition Player v1.1.5 UNIFIED CHROME FIX",
+  "normalMode": {
+    "brandHeaderVisible": true,
+    "childTopChromeHidden": true,
+    "childBottomChromeHidden": true,
+    "parentIconControlsOnly": true
+  },
+  "fullscreenMode": {
+    "fullscreenTarget": "#app",
+    "brandHeaderVisible": true,
+    "childFullscreenControlHidden": true,
+    "parentIconControlsOnly": true
+  },
+  "languages": [
+    "KR",
+    "EN",
+    "RU"
+  ],
+  "timingManagerRetained": true,
+  "ruTextLayoutFixRetained": true,
+  "launchers": [
+    "START_ROOTED_EXHIBITION.bat",
+    "START_ROOTED_TIMING_MANAGER.bat"
+  ]
+}

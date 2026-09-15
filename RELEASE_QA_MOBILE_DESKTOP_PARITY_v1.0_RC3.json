@@ -1,0 +1,22 @@
+{
+  "release": "ROOTED Mobile Landscape v1.0 RC3 DESKTOP_PARITY",
+  "base": "ROOTED Desktop v2.1.20 RC1",
+  "strategy": "fixed virtual desktop width 1600px, aspect-matched virtual height, whole-stage scale",
+  "checks": {
+    "KR": {
+      "sceneCount": 94,
+      "missingImages": [],
+      "version": "ROOTED v2.1.20 RC1"
+    },
+    "EN": {
+      "sceneCount": 94,
+      "missingImages": [],
+      "version": "ROOTED v2.1.20 RC1"
+    },
+    "RU": {
+      "sceneCount": 94,
+      "missingImages": [],
+      "version": "ROOTED v2.1.20 RC1"
+    }
+  }
+}

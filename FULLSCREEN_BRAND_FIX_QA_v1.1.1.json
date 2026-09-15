@@ -1,0 +1,9 @@
+{
+  "release": "ROOTED KR/EN/RU Integrated Exhibition Player v1.1.1 FULLSCREEN BRAND FIX",
+  "fix": "Fullscreen now targets #app so top logos and language controls remain visible in fullscreen.",
+  "fullscreenTarget": "#app",
+  "headerPersistsInFullscreen": true,
+  "bottomCommandBarPersistsInFullscreen": true,
+  "timingManagerRetained": true,
+  "contentChanged": false
+}

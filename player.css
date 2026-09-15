@@ -1,0 +1,369 @@
+*{box-sizing:border-box}
+html,body,#app{margin:0;width:100%;height:100%;overflow:hidden;background:#09110e;color:#f4f1e9;font-family:Arial,"Noto Sans KR",sans-serif}
+.book-frame{position:absolute;inset:0;width:100%;height:100%;border:0;background:#09110e;display:none}
+.book-frame.active{display:block}
+.gate{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:radial-gradient(circle at 50% 42%,#1b3028 0,#0d1814 58%,#08100d 100%);transition:opacity .45s ease,visibility .45s ease}
+.gate.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.gate-card{text-align:center;width:min(760px,90vw)}
+.eyebrow{font-size:12px;letter-spacing:.22em;color:#9fb0a6;margin-bottom:22px}
+h1{font-size:clamp(58px,10vw,118px);letter-spacing:.12em;margin:0;font-weight:700}
+.gate p{font-size:clamp(14px,1.8vw,20px);color:#c5d0ca;margin:10px 0 38px}
+.language-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.language{min-width:170px;padding:15px 26px;border-radius:999px;border:1px solid rgba(255,255,255,.28);background:transparent;color:#fff;font:inherit;font-size:16px;cursor:pointer}
+.language.primary,.language:hover:not(:disabled){background:#f4f1e9;color:#14271f;border-color:#f4f1e9}
+.language:disabled{opacity:.35;cursor:default}
+.hint{margin-top:20px;font-size:11px;color:#7f9388;letter-spacing:.03em}
+.controls{position:fixed;z-index:90;left:50%;bottom:16px;transform:translateX(-50%);display:flex;align-items:center;gap:5px;padding:7px 9px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(7,13,11,.72);backdrop-filter:blur(12px);box-shadow:0 12px 30px rgba(0,0,0,.24);opacity:1;transition:opacity .25s ease}
+.controls.hidden{opacity:0;pointer-events:none}
+.controls button{appearance:none;border:0;border-radius:999px;background:transparent;color:#eaf0ec;padding:8px 11px;font:inherit;font-size:12px;cursor:pointer;white-space:nowrap}
+.controls button:hover,.controls button.active{background:rgba(255,255,255,.13)}
+.divider{width:1px;height:18px;background:rgba(255,255,255,.15);margin:0 2px}
+.status{position:fixed;z-index:95;right:14px;top:14px;padding:8px 11px;border-radius:999px;background:rgba(7,13,11,.74);color:#dce5df;font-size:11px;letter-spacing:.04em;transition:opacity .2s}
+.status.hidden{opacity:0;pointer-events:none}
+@media(max-width:700px){.controls{bottom:8px}.controls button{padding:7px 8px}.language{min-width:140px}.eyebrow{font-size:10px}}
+
+
+:root{--brand-header-h:76px}
+.brand-header{
+  position:fixed;left:0;right:0;top:0;height:var(--brand-header-h);z-index:130;
+  display:grid;grid-template-columns:minmax(250px,1fr) auto minmax(180px,1fr);
+  align-items:center;padding:0 28px;background:#020403;
+  border-bottom:1px solid rgba(255,255,255,.10);
+  box-shadow:0 4px 20px rgba(0,0,0,.24);
+}
+.brand-left{display:flex;align-items:center;justify-content:flex-start;min-width:0}
+.company-logo{height:50px;max-width:300px;width:auto;object-fit:contain;display:block}
+.brand-center{display:flex;align-items:center;justify-content:center}
+.farmtos-logo{height:58px;width:auto;max-width:360px;display:block;margin:0 auto;object-fit:contain}
+.brand-language{display:flex;align-items:center;justify-content:flex-end;gap:10px}
+.header-lang{
+  appearance:none;border:1px solid rgba(255,255,255,.32);background:transparent;color:#f4f1e9;
+  min-width:52px;padding:8px 12px;border-radius:999px;font:inherit;font-size:13px;letter-spacing:.08em;cursor:pointer
+}
+.header-lang:hover,.header-lang.active{background:#f4f1e9;color:#14271f;border-color:#f4f1e9}
+.header-sep{color:#7d8c84;font-size:13px}
+.book-frame{top:var(--brand-header-h)!important;height:calc(100% - var(--brand-header-h))!important}
+.gate{top:var(--brand-header-h)!important}
+.controls{bottom:16px}
+@media(max-width:900px){
+  :root{--brand-header-h:66px}
+  .brand-header{grid-template-columns:1fr auto;padding:0 12px}
+  .company-logo{height:40px;max-width:220px}
+  .brand-center{display:none}
+  .header-lang{min-width:44px;padding:7px 9px;font-size:12px}
+}
+
+
+/* KR / EN / RU integrated v1.0 */
+.brand-language{
+  gap:8px;
+  flex-wrap:nowrap;
+}
+.language-row .language{
+  min-width:160px;
+}
+.controls{
+  gap:4px;
+}
+@media(max-width:980px){
+  .brand-language{gap:6px}
+  .header-lang{min-width:42px}
+}
+
+
+/* v1.1 — persistent command bar */
+.controls{
+  opacity:1 !important;
+  visibility:visible;
+}
+.controls.hidden{
+  opacity:0 !important;
+  visibility:hidden;
+  pointer-events:none;
+}
+
+
+/* v1.1.1 — fullscreen brand persistence fix */
+#app{
+  position:relative;
+  width:100%;
+  height:100%;
+  background:#09110e;
+}
+#app:fullscreen,
+#app:-webkit-full-screen{
+  width:100vw;
+  height:100vh;
+  background:#09110e;
+}
+#app:fullscreen .brand-header,
+#app:-webkit-full-screen .brand-header{
+  display:grid !important;
+  position:fixed;
+  top:0; left:0; right:0;
+  height:var(--brand-header-h);
+  z-index:130;
+}
+#app:fullscreen .book-frame,
+#app:-webkit-full-screen .book-frame{
+  top:var(--brand-header-h) !important;
+  height:calc(100vh - var(--brand-header-h)) !important;
+}
+#app:fullscreen .gate,
+#app:-webkit-full-screen .gate{
+  top:var(--brand-header-h) !important;
+  height:calc(100vh - var(--brand-header-h)) !important;
+}
+#app:fullscreen .controls,
+#app:-webkit-full-screen .controls{
+  z-index:140;
+}
+#app:fullscreen .status,
+#app:-webkit-full-screen .status{
+  z-index:145;
+}
+
+
+/* =====================================================
+   v1.1.3 — exhibition icon control bar
+   ===================================================== */
+.controls{
+  gap:8px !important;
+  padding:8px 10px !important;
+  border-radius:18px !important;
+  bottom:18px !important;
+  transition:opacity .22s ease, transform .22s ease, visibility .22s ease !important;
+}
+.controls.hidden{
+  opacity:0 !important;
+  visibility:hidden !important;
+  pointer-events:none !important;
+  transform:translateX(-50%) translateY(12px) !important;
+}
+.controls .icon-btn{
+  width:42px !important;
+  height:42px !important;
+  min-width:42px !important;
+  padding:0 !important;
+  display:grid !important;
+  place-items:center !important;
+  border-radius:50% !important;
+  font-size:20px !important;
+  line-height:1 !important;
+}
+.controls .icon-btn:hover{
+  background:rgba(255,255,255,.16) !important;
+}
+.control-toggle{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:145;
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:50%;
+  background:rgba(7,13,11,.62);
+  color:#eaf0ec;
+  backdrop-filter:blur(10px);
+  font:700 15px/1 Arial,sans-serif;
+  letter-spacing:.05em;
+  cursor:pointer;
+  opacity:.62;
+  transition:opacity .2s ease,background .2s ease;
+}
+.control-toggle:hover{
+  opacity:1;
+  background:rgba(15,27,22,.9);
+}
+.control-toggle.hidden{
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+}
+#app:fullscreen .control-toggle,
+#app:-webkit-full-screen .control-toggle{
+  z-index:150;
+}
+
+
+/* =========================================================
+   v1.1.5 — unified integrated chrome / brand persistence
+   ========================================================= */
+#app{
+  position:relative !important;
+  width:100% !important;
+  height:100% !important;
+  overflow:hidden !important;
+}
+.brand-header{
+  display:grid !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  pointer-events:auto !important;
+  z-index:10000 !important;
+}
+.book-frame{
+  z-index:1 !important;
+  top:var(--brand-header-h) !important;
+  height:calc(100% - var(--brand-header-h)) !important;
+}
+.gate{
+  z-index:9000 !important;
+  top:var(--brand-header-h) !important;
+  height:calc(100% - var(--brand-header-h)) !important;
+}
+.controls{
+  z-index:11000 !important;
+}
+.control-toggle{
+  z-index:11010 !important;
+}
+.status{
+  z-index:11020 !important;
+}
+
+#app:fullscreen .brand-header,
+#app:-webkit-full-screen .brand-header{
+  display:grid !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  z-index:10000 !important;
+}
+#app:fullscreen .book-frame,
+#app:-webkit-full-screen .book-frame{
+  top:var(--brand-header-h) !important;
+  height:calc(100vh - var(--brand-header-h)) !important;
+  z-index:1 !important;
+}
+#app:fullscreen .gate,
+#app:-webkit-full-screen .gate{
+  top:var(--brand-header-h) !important;
+  height:calc(100vh - var(--brand-header-h)) !important;
+}
+
+
+/* v1.1.8 — 0–100% volume controls */
+.volume-label{
+  min-width:46px;
+  text-align:center;
+  font-size:12px;
+  font-variant-numeric:tabular-nums;
+  color:#eaf0ec;
+  padding:0 2px;
+}
+.controls .divider{
+  margin:0 4px;
+}
+
+
+/* RC8.2 — explicit previous/next screen controls */
+.controls .nav-screen-btn{
+  display:grid !important;
+  place-items:center !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  background:rgba(255,255,255,.11) !important;
+  border:1px solid rgba(255,255,255,.20) !important;
+}
+.controls .nav-screen-btn:hover{
+  background:rgba(255,255,255,.21) !important;
+}
+.controls .nav-svg{
+  width:24px !important;
+  height:24px !important;
+  display:block !important;
+  fill:none !important;
+  stroke:#f3f7f4 !important;
+  stroke-width:2.4 !important;
+  stroke-linecap:round !important;
+  stroke-linejoin:round !important;
+}
+@media(max-width:900px){
+  .controls .nav-screen-btn{
+    width:40px !important;
+    height:40px !important;
+    min-width:40px !important;
+  }
+}
+
+
+/* =========================================================
+   RC8.3 — Previous / Next screen controls
+   Always visible while the command bar is visible.
+   SVG icons avoid font-glyph disappearance.
+   ========================================================= */
+.controls{
+  max-width:calc(100vw - 24px) !important;
+  overflow:visible !important;
+  flex-wrap:nowrap !important;
+}
+.controls .nav-screen-btn{
+  display:grid !important;
+  place-items:center !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  width:44px !important;
+  height:44px !important;
+  min-width:44px !important;
+  padding:0 !important;
+  background:rgba(255,255,255,.16) !important;
+  border:1px solid rgba(255,255,255,.28) !important;
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,.08) !important;
+}
+.controls .nav-screen-btn:hover{
+  background:rgba(255,255,255,.27) !important;
+}
+.controls .nav-svg{
+  width:27px !important;
+  height:27px !important;
+  display:block !important;
+  fill:none !important;
+  stroke:#f7faf8 !important;
+  stroke-width:2.6 !important;
+  stroke-linecap:round !important;
+  stroke-linejoin:round !important;
+  pointer-events:none !important;
+}
+.controls .nav-divider{
+  margin:0 4px !important;
+  opacity:.75 !important;
+}
+@media(max-width:700px){
+  .controls{
+    gap:3px !important;
+    padding:6px 7px !important;
+  }
+  .controls button{
+    padding:7px 7px !important;
+  }
+  .controls .nav-screen-btn{
+    width:38px !important;
+    height:38px !important;
+    min-width:38px !important;
+  }
+  .controls .nav-svg{
+    width:23px !important;
+    height:23px !important;
+  }
+}
+
+
+/* RC8.6 player chrome typography */
+@font-face{
+  font-family:"ROOTED Pretendard";
+  src:url("assets/fonts/PretendardVariable.woff2") format("woff2-variations");
+  font-style:normal;
+  font-weight:45 920;
+  font-display:swap;
+}
+:root{
+  --rooted-ui:"ROOTED Pretendard","Pretendard Variable",Pretendard,
+              -apple-system,BlinkMacSystemFont,system-ui,
+              "Segoe UI","Malgun Gothic",Arial,sans-serif;
+}
+body,.controls,.lang-btn,.volume-label,.start-card,.brand-chip{
+  font-family:var(--rooted-ui) !important;
+}

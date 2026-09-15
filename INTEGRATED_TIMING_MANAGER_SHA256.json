@@ -1,0 +1,14 @@
+{
+  "index.html": "9deab481f86f99dc363e257a66db5f15ea5ca1ef529b543d5691847912e8145c",
+  "player.css": "42941419ce8e8f8d3d3f12479a34f9872641c025ec289c8842656aa0c6f190f5",
+  "player.js": "027f3333dd21d7c9ab34631511d9645c53ffca0795a3929c8219566a6fae15d0",
+  "ROOTED_Integrated_Server.ps1": "4417dd761d31f2e1300f5a57b6e551ae0947aa66ce411abbad4ce6d4a7008612",
+  "ROOTED_Launcher.ps1": "290db1c1e8dcc6e16a5e438730e858635a9833486c8fb163b869def491e74420",
+  "START_ROOTED_EXHIBITION.bat": "3086cb3da5e3a7251c0c3104c529851b2b9d42dd3d8dcf70113d569b5722c5d5",
+  "START_ROOTED_TIMING_MANAGER.bat": "99591ce61efabcd15bab6681f74598b93a8351eeac8910994660ab8bec56703f",
+  "timing_manager/index.html": "974447609ff7086a51bc4dc252afaeee86e4eaac209425065cda44f4c0683a34",
+  "timing_manager/recommended_KR.json": "1fadad64586127ae60cabce6ddef8612be9920500b67ca1e7d97bcd96ff70680",
+  "timing_manager/recommended_EN.json": "8c1bdcae9b4a48353043b6153f03b12bbba2701f9bbe9d02bb6e5348d202c2a0",
+  "timing_manager/recommended_RU.json": "bac99d5a4bfdaf2e01ba128ecbf5b0bcc89d6a92086881d59e919643b4eebb88",
+  "INTEGRATED_TIMING_MANAGER_QA_v1.1.json": "ea22723672cfa3f6a7f13bd49066cc317d0b462df989b6566f77393a0341f117"
+}

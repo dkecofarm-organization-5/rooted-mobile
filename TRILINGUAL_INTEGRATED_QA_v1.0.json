@@ -1,0 +1,33 @@
+{
+  "release": "ROOTED_Vol1_KR_EN_RU_INTEGRATED_EXHIBITION_PLAYER_v1.0",
+  "languages": [
+    "KR",
+    "EN",
+    "RU"
+  ],
+  "headerLanguageSwitchAlwaysVisible": true,
+  "brandHeaderFixed": true,
+  "runtimeFrames": {
+    "KR": "runtime/KR/index.html?integrated=1",
+    "EN": "runtime/EN/index.html?integrated=1",
+    "RU": "runtime/RU/index.html?integrated=1"
+  },
+  "behavior": {
+    "continuousPlayback": true,
+    "pauseRestartStopFullscreen": true,
+    "languageSwitchRestartsFromScene1": true,
+    "previousLanguageFullyStoppedOnSwitch": true
+  },
+  "content": {
+    "journey2FullKeepAllLanguages": true,
+    "journey3FullKeepAllLanguages": true,
+    "krEnBasePreserved": true,
+    "ruRuntimeSource": "ROOTED_Vol1_Digital_Storybook_RU_LANDSCAPE_EXHIBITION_SHORT_v1.1.3_EDITORIAL_TYPO_FINAL"
+  },
+  "launcher": {
+    "normal": "START_ROOTED_KR_EN_RU_EXHIBITION.bat",
+    "diagnostic": "START_ROOTED_KR_EN_RU_DIAGNOSTIC.cmd",
+    "reset": "RESET_ROOTED_KR_EN_RU_RUNTIME.cmd",
+    "pythonRequired": false
+  }
+}

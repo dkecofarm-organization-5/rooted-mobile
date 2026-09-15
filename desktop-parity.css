@@ -1,0 +1,39 @@
+/* ROOTED Mobile Landscape v1.0 RC3 — DESKTOP PARITY
+   Principle: do not reflow the storybook for phones.
+   Render the approved desktop composition in a wide virtual viewport,
+   then scale that whole stage to the physical landscape screen. */
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000!important}
+body{position:relative}
+#app{
+  position:absolute!important;
+  left:0;top:0;
+  width:1600px!important;
+  height:900px!important;
+  transform-origin:0 0!important;
+  overflow:hidden!important;
+  background:#09110e!important;
+  will-change:transform;
+}
+/* Undo parent-player mobile media-query chrome changes. */
+:root{--brand-header-h:76px!important}
+.brand-header{
+  height:76px!important;
+  grid-template-columns:minmax(250px,1fr) auto minmax(180px,1fr)!important;
+  padding:0 28px!important;
+}
+.brand-center{display:flex!important}
+.company-logo{height:50px!important;max-width:300px!important}
+.farmtos-logo{height:58px!important;max-width:360px!important}
+.brand-language{gap:10px!important}
+.header-lang{min-width:52px!important;padding:8px 12px!important;font-size:13px!important}
+.header-sep{font-size:13px!important}
+.book-frame{top:76px!important;height:calc(100% - 76px)!important}
+.gate{top:76px!important;height:calc(100% - 76px)!important}
+.controls{bottom:18px!important;gap:8px!important;padding:8px 10px!important;border-radius:18px!important}
+.controls .icon-btn{width:42px!important;height:42px!important;min-width:42px!important;font-size:20px!important}
+.control-toggle{right:18px!important;bottom:18px!important;width:42px!important;height:42px!important}
+.status{right:14px!important;top:90px!important}
+
+.rotate-notice{display:none;position:fixed;inset:0;z-index:999999;background:#0b1511;color:#f4f1e9;place-items:center;text-align:center;padding:24px;font-family:Arial,"Noto Sans KR",sans-serif}
+.rotate-card{display:grid;gap:8px;justify-items:center}.rotate-icon{font-size:44px;color:#9fb0a6}.rotate-card strong{font-size:18px}.rotate-card span{font-size:11px;color:#9fb0a6}
+@media (orientation:portrait) and (max-width:1100px){.rotate-notice{display:grid}}

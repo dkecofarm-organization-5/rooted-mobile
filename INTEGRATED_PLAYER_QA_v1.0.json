@@ -1,0 +1,55 @@
+{
+  "release": "ROOTED_Vol1_KR_EN_INTEGRATED_EXHIBITION_PLAYER_v1.0",
+  "wrapper": "NEW — operation layer only; child storybook design/rendering unchanged",
+  "KR": {
+    "source": "KR LANDSCAPE EXHIBITION SHORT v1.2.2",
+    "scenes": 89,
+    "storyRuntime": "13:57",
+    "runtimeSec": 837,
+    "J2": "FULL_KEEP",
+    "J3": "FULL_KEEP"
+  },
+  "EN": {
+    "source": "EN LANDSCAPE EXHIBITION SHORT v1.1",
+    "scenes": 89,
+    "storyRuntime": "16:31",
+    "runtimeSec": 991,
+    "J2": "FULL_KEEP",
+    "J3": "FULL_KEEP"
+  },
+  "sceneSelectionAndOrderParity": true,
+  "functions": {
+    "startupLanguageGate": true,
+    "KR_EN_switch_anytime": true,
+    "switch_restarts_selected_language_from_beginning": true,
+    "autoStartExperienceStory": true,
+    "continuousLoop": true,
+    "pauseResume": true,
+    "restart": true,
+    "stopReturnsToLanguageGate": true,
+    "fullscreen": true,
+    "controlsAutoHide": true
+  },
+  "closingAudio": {
+    "KR": "HOPE 5.5s fade-out → 1.75s silence → ROOTS 5.5s fade-in",
+    "EN": "HOPE 5.5s fade-out → 1.75s silence → ROOTS 5.5s fade-in",
+    "verified": true
+  },
+  "nodeSyntax": {
+    "player.js": "PASS",
+    "KR app.js": "PASS",
+    "EN app.js": "PASS"
+  },
+  "runtimeChecksStillRequired": [
+    "Run START_ROOTED_KR_EN_EXHIBITION.bat",
+    "KR selection starts EXPERIENCE/STORY with BGM",
+    "EN selection starts EXPERIENCE/STORY with BGM",
+    "KR→EN→KR switching 10 times with no overlapping BGM",
+    "Pause/Resume",
+    "Restart",
+    "Stop",
+    "Final-to-opening continuous loop in KR and EN",
+    "20-loop run",
+    "4-hour soak test on exhibition PC"
+  ]
+}

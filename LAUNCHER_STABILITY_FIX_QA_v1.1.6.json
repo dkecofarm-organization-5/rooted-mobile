@@ -1,0 +1,12 @@
+{
+  "release": "ROOTED KR/EN/RU Integrated Exhibition Player v1.1.6 Launcher Stability Fix",
+  "stateFolder": "%LOCALAPPDATA%\\DK EcoFarm\\ROOTED Integrated Exhibition v1.1.6\\State",
+  "staleStateSelfHealing": true,
+  "healthCheckRetries": 40,
+  "healthCheckIntervalMs": 100,
+  "batUtf8Bom": false,
+  "diagnosticLauncher": "START_ROOTED_EXHIBITION_DIAGNOSTIC.cmd",
+  "manualReset": "RESET_ROOTED_V116_RUNTIME.cmd",
+  "unifiedChromeFixRetained": true,
+  "timingManagerRetained": true
+}

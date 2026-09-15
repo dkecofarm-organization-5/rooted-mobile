@@ -1,0 +1,49 @@
+{
+  "release": "ROOTED_Vol1_KR_EN_INTEGRATED_EXHIBITION_PLAYER_v1.4_FINAL_BRANDED",
+  "fixedHeader": true,
+  "headerItems": [
+    "DK EcoFarm company logo",
+    "FarmTOS-ON wordmark",
+    "KR/EN language selector"
+  ],
+  "headerVisibleAllPages": true,
+  "storyRuntimeModified": false,
+  "storyContentModified": false,
+  "KR": {
+    "sceneCount": 89,
+    "runtime": "13:57"
+  },
+  "EN": {
+    "sceneCount": 89,
+    "runtime": "16:31"
+  },
+  "nodeSyntax": {
+    "player.js": "PASS",
+    "KR app.js": "PASS",
+    "EN app.js": "PASS"
+  },
+  "logoAssets": {
+    "transparentPNG": "DK_EcoFarm_Official_Logo_Transparent.png",
+    "illustratorAI": "DK_EcoFarm_Official_Logo_Illustrator.ai",
+    "aiNature": "Illustrator-openable legacy EPS/PostScript; raster-derived, not native Bézier vector",
+    "farmtosWordmarkSVG": "FarmTOS_ON_Wordmark.svg"
+  },
+  "operatorQA": [
+    "fixed header visible on gate and all storybook pages",
+    "KR button switches to KR and starts from Scene 1",
+    "EN button switches to EN and starts from Scene 1",
+    "company logo remains sharp at exhibition resolution",
+    "FarmTOS-ON wordmark does not overlap language controls",
+    "storybook page is not obscured by top header"
+  ],
+  "farmtosWordmarkRefinement": {
+    "approvedUserLogoImageUsed": true,
+    "visibleHeaderUsesGeneratedSvg": false,
+    "visibleHeaderUsesApprovedPng": true,
+    "continuousWordmark": true,
+    "subtitleEnlargedAndCentered": true,
+    "asset": "assets/brand/FarmTOS_ON_Approved_Logo.png"
+  },
+  "nextStep": "Rebuild Windows installer handoff only after approval of this integrated player.",
+  "installerHandoffStatus": "REBUILD_AFTER_USER_APPROVAL_OF_V1_4"
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="theme-color" content="#0b1511">
+<title>ROOTED · KR / EN / RU Digital Storybook</title>
+<link rel="stylesheet" href="player.css?v=v2.1.20-rc1">
+<link rel="stylesheet" href="desktop-parity.css?v=mobile-v1.0-rc3">
+</head>
+<body>
+<div id="app">
+  <header id="brandHeader" class="brand-header">
+    <div class="brand-left">
+      <img class="company-logo" src="assets/brand/DK_EcoFarm_Official_Logo_Transparent.png" alt="DK EcoFarm">
+    </div>
+    <div class="brand-center">
+      <img class="farmtos-logo" src="assets/brand/FarmTOS_ON_Approved_Logo.png" alt="FarmTOS-ON">
+    </div>
+    <div class="brand-language" aria-label="Language">
+      <button id="headerKR" class="header-lang">KR</button>
+      <span class="header-sep">|</span>
+      <button id="headerEN" class="header-lang">EN</button>
+      <span class="header-sep">|</span>
+      <button id="headerRU" class="header-lang">RU</button>
+    </div>
+  </header>
+
+  <iframe id="krFrame" class="book-frame" src="runtime/KR/index.html?integrated=1&v=v2.1.20-rc1" title="ROOTED Korean"></iframe>
+  <iframe id="enFrame" class="book-frame" src="runtime/EN/index.html?integrated=1&v=v2.1.20-rc1" title="ROOTED English"></iframe>
+  <iframe id="ruFrame" class="book-frame" src="runtime/RU/index.html?integrated=1&v=v2.1.20-rc1" title="ROOTED Russian"></iframe>
+
+  <section id="gate" class="gate">
+    <div class="gate-card">
+      <div class="eyebrow">DK ECOFARM · VOLUME 1 · DIGITAL STORYBOOK · ORIGINAL SCORE EDITION · V9.0.5</div>
+      <h1>ROOTED</h1>
+      <p>The Story and Philosophy of DK EcoFarm</p>
+      <div class="language-row">
+        <button id="startKR" class="language primary" disabled>한국어</button>
+        <button id="startEN" class="language" disabled>English</button>
+        <button id="startRU" class="language" disabled>Русский</button>
+      </div>
+      <div id="loadingText" class="hint">Loading digital editions…</div>
+    </div>
+  </section>
+
+  <div id="controls" class="controls hidden" aria-label="Playback controls">
+    <button id="prevBtn" class="icon-btn nav-screen-btn nav-prev" title="Previous screen" aria-label="Previous screen">
+      <svg class="nav-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 4.5 8 12l7.5 7.5"/></svg>
+    </button>
+    <span class="divider nav-divider"></span>
+    <button id="muteBtn" class="icon-btn" title="Mute" aria-label="Mute">🔊</button>
+    <button id="volDownBtn" class="icon-btn" title="Volume down" aria-label="Volume down">−</button>
+    <span id="volumeLabel" class="volume-label">25%</span>
+    <button id="volUpBtn" class="icon-btn" title="Volume up" aria-label="Volume up">＋</button>
+    <span class="divider"></span>
+    <button id="pauseBtn" class="icon-btn" title="Pause" aria-label="Pause">⏸</button>
+    <button id="restartBtn" class="icon-btn" title="Restart" aria-label="Restart">↻</button>
+    <button id="stopBtn" class="icon-btn" title="Stop" aria-label="Stop">■</button>
+    <button id="fullBtn" class="icon-btn" title="Fullscreen" aria-label="Fullscreen">⛶</button>
+    <span class="divider nav-divider"></span>
+    <button id="nextBtn" class="icon-btn nav-screen-btn nav-next" title="Next screen" aria-label="Next screen">
+      <svg class="nav-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="m8.5 4.5 7.5 7.5-7.5 7.5"/></svg>
+    </button>
+  </div>
+
+  <button id="controlToggle" class="control-toggle hidden"
+          title="Playback controls" aria-label="Show playback controls">•••</button>
+
+  <div id="status" class="status hidden"></div>
+</div>
+<section id="rotateNotice" class="rotate-notice" aria-live="polite">
+  <div class="rotate-card"><div class="rotate-icon">↻</div><strong>가로 화면으로 돌려 주세요</strong><span>Please rotate your device to landscape.</span><span>Поверните устройство горизонтально.</span></div>
+</section>
+<script src="player.js?v=v2.1.20-rc1"></script>
+<script src="desktop-parity.js?v=mobile-v1.0-rc3"></script>
+</body>
+</html>

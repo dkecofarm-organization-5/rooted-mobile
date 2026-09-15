@@ -1,0 +1,16 @@
+{
+  "release": "ROOTED KR/EN/RU Integrated Exhibition Player v1.1.4 Runtime Bottom Bar Fix",
+  "rootCause": "Child runtimes retained their own bottom READ/STORY/5S footer.",
+  "integratedModeQuery": "integrated=1",
+  "childRuntimeBottomBarHidden": {
+    "KR": true,
+    "EN": true,
+    "RU": true
+  },
+  "standaloneRuntimeBottomBarPreserved": true,
+  "parentIconControlBarRetained": true,
+  "topLanguageSelectorRetained": true,
+  "fullscreenBrandPersistence": true,
+  "timingManagerRetained": true,
+  "ruTextOnlyCenteringRetained": true
+}

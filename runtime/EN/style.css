@@ -1,0 +1,804 @@
+*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0b1511;color:#24342d;font-family:"Noto Sans CJK KR","Noto Sans KR",Arial,sans-serif}.app{width:100%;height:100%;background:#0d1713;display:grid;place-items:center}.stage{position:relative;width:100vw;height:100vh;overflow:hidden;background:#f4f1e9;perspective:2600px;perspective-origin:50% 50%;transform-style:preserve-3d}.scene{position:absolute;inset:0;opacity:0;pointer-events:none;z-index:1}.scene.active{opacity:1;z-index:2}.scene.reveal-base{opacity:1;z-index:2;transform:scale(.998);filter:brightness(.94);transition:transform var(--scene-transition,980ms) cubic-bezier(.22,.72,.22,1),filter var(--scene-transition,980ms) ease}.scene.reveal-base.revealed{transform:scale(1);filter:brightness(1)}.turn-sheet{position:absolute;inset:0;z-index:8;opacity:1;transform-style:preserve-3d;backface-visibility:hidden;will-change:transform,filter;pointer-events:none;transition:transform var(--scene-transition,980ms) cubic-bezier(.28,.02,.16,1),filter var(--scene-transition,980ms) ease,box-shadow var(--scene-transition,980ms) ease}.turn-sheet.next{transform-origin:0% 50%}.turn-sheet.prev{transform-origin:100% 50%}.turn-sheet.next.turning{transform:translateX(-.8%) rotateY(-91deg);filter:brightness(.80);box-shadow:40px 0 80px rgba(10,18,14,.20)}.turn-sheet.prev.turning{transform:translateX(.8%) rotateY(91deg);filter:brightness(.80);box-shadow:-40px 0 80px rgba(10,18,14,.20)}.turn-sheet:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity var(--scene-transition,980ms) ease}.turn-sheet.next.turning:after{opacity:1;background:linear-gradient(90deg,rgba(255,255,255,0) 48%,rgba(90,82,70,.05) 72%,rgba(30,26,21,.25) 100%)}.turn-sheet.prev.turning:after{opacity:1;background:linear-gradient(270deg,rgba(255,255,255,0) 48%,rgba(90,82,70,.05) 72%,rgba(30,26,21,.25) 100%)}.canvas{width:100%;height:100%;background:#f4f1e9;display:grid}.dark{background:#14271f;color:#f3f0e7}.cover{padding:8vh 9vw;display:flex;flex-direction:column;justify-content:center}.cover h1{font-family:"Noto Serif CJK KR","NanumMyeongjo",serif;font-size:clamp(64px,8vw,138px);letter-spacing:.08em;margin:0;font-weight:500}.cover p{font-family:Georgia,serif;font-size:clamp(16px,1.4vw,25px);color:#cbd5cf;margin:18px 0}.eyebrow{font-size:clamp(11px,.8vw,14px);letter-spacing:.22em;color:#81958a}.hero{position:relative;width:100%;height:100%}.hero img{width:100%;height:100%;object-fit:cover}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,14,11,.10),transparent 38%,rgba(7,14,11,.05))}.split{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.split.reverse .media{order:2}.split.reverse .copy{order:1}.media{min-width:0;overflow:hidden}.media img{width:100%;height:100%;object-fit:cover}.copy{padding:8vh 7vw;display:flex;flex-direction:column;justify-content:center;min-width:0}.copy h2,.textOnly h2,.opener h2{font-family:"Noto Serif CJK KR","NanumMyeongjo",serif;font-size:clamp(42px,4.3vw,76px);font-weight:500;line-height:1.22;margin:12px 0 30px;color:#22322b;word-break:keep-all;overflow-wrap:normal;line-break:strict}.body{font-size:clamp(21px,1.55vw,29px);line-height:1.9;letter-spacing:-.02em;white-space:normal;max-width:34em;color:#34453d;word-break:keep-all;overflow-wrap:normal;line-break:strict;text-wrap:pretty}.textOnly,.statement,.resolution{padding:10vh 12vw;display:flex;flex-direction:column;justify-content:center}.textOnly .body{max-width:49em}.statement .body,.resolution .body{font-family:"Noto Serif CJK KR","NanumMyeongjo",serif;font-size:clamp(28px,2.35vw,44px);line-height:1.78;max-width:31em;color:#293a32;word-break:keep-all;overflow-wrap:normal;line-break:strict;text-wrap:pretty}.divider{padding:10vh 11vw;display:flex;flex-direction:column;justify-content:center}.divider h2{font-family:"Noto Serif CJK KR","NanumMyeongjo",serif;font-size:clamp(54px,6.2vw,110px);font-weight:500;margin:18px 0;word-break:keep-all}.opener{padding:9vh 10vw;display:flex;flex-direction:column;justify-content:center}.opener h2{max-width:13em}.opener p{font-family:Georgia,serif;color:#6e7e76;font-size:clamp(15px,1.25vw,22px);margin:0}.closing{grid-template-columns:1.08fr .92fr}.closing.noimage{grid-template-columns:1fr}.closing .copy{padding-left:8vw}.closing .body{font-family:"Noto Serif CJK KR","NanumMyeongjo",serif;font-size:clamp(27px,2.25vw,42px);line-height:1.75;max-width:29em}.closing.noimage .body{max-width:34em}.resolution .body{max-width:34em}.resolution .sub{font-family:Georgia,serif;margin-top:32px;color:#718279;font-size:clamp(16px,1.2vw,22px)}.blank{background:#f4f1e9}.chrome{position:absolute;z-index:30;opacity:0;pointer-events:none;transition:opacity .28s ease}.app.ui .chrome{opacity:1;pointer-events:auto}.top{top:18px;left:22px;right:22px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center}.meta{justify-self:center;background:rgba(8,15,12,.58);backdrop-filter:blur(12px);padding:8px 13px;border-radius:999px;color:#dae3dd;font-size:11px;letter-spacing:.08em}.meta i{display:inline-block;width:3px;height:3px;background:#82978c;border-radius:50%;margin:0 8px;vertical-align:middle}.actions{justify-self:end;display:flex;gap:7px}.round,.pill{border:1px solid rgba(255,255,255,.13);background:rgba(8,15,12,.58);backdrop-filter:blur(12px);color:#f0f4f1;cursor:pointer}.round{width:38px;height:38px;border-radius:50%;font-size:18px}.round.small{font-size:12px}.pill{height:38px;border-radius:999px;padding:0 13px;font-size:10px;letter-spacing:.08em}.pill.off{opacity:.58}.bottom{bottom:18px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:7px}.modes{display:flex;padding:3px;background:rgba(8,15,12,.62);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.1);border-radius:999px}.modes button{border:0;background:transparent;color:#aebdb5;font-size:10px;letter-spacing:.12em;padding:8px 11px;border-radius:999px;cursor:pointer}.modes button.active{background:#edf1ee;color:#14271f}.progress{position:absolute;left:0;bottom:0;height:2px;background:#81978b;width:0;z-index:40;transition:width .25s}.tap{position:absolute;top:0;bottom:0;width:15%;z-index:10;background:transparent;border:0;cursor:pointer}.tap.prev{left:0}.tap.next{right:0}.drawer{position:absolute;right:18px;top:18px;bottom:18px;width:min(410px,91vw);z-index:70;padding:22px;background:rgba(12,22,18,.98);color:#e8eee9;border:1px solid rgba(255,255,255,.1);border-radius:16px;transform:translateX(calc(100% + 40px));transition:.3s;overflow:auto}.drawer.open{transform:none}.drawerHead{display:flex;justify-content:space-between}.drawerHead span{font-size:9px;letter-spacing:.18em;color:#80958a}.drawerHead h2{margin:5px 0 0;font-family:Georgia,serif;font-size:24px}.drawer>p{font-size:11px;color:#93a69b}.volume{padding:12px;margin:18px 0;border:1px solid rgba(255,255,255,.09);border-radius:10px}.volume label{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.14em;color:#94a89d}.volume input{width:100%;margin-top:10px;accent-color:#8fa296}.actLabel{margin:18px 8px 6px;font-size:9px;letter-spacing:.18em;color:#72867b}.navItem{width:100%;border:0;background:transparent;color:#e7ede9;text-align:left;padding:9px 10px;border-radius:8px;cursor:pointer;word-break:keep-all}.navItem:hover,.navItem.current{background:#21352c}.navItem b{display:block;font-size:9px;letter-spacing:.12em;color:#8ca096}.navItem span{display:block;margin-top:3px;font-size:12px}.start{position:absolute;inset:0;z-index:100;display:grid;place-items:center;background:linear-gradient(145deg,#102119,#172c22 58%,#0c1712);color:#f4f1e9;transition:.7s}.start.hide{opacity:0;visibility:hidden}.startInner{text-align:center;width:min(760px,90vw);padding:30px}.startInner>span{font-size:9px;letter-spacing:.24em;color:#81988c}.start h1{font-family:Georgia,"Noto Serif CJK KR",serif;font-size:clamp(56px,7vw,100px);letter-spacing:.1em;margin:12px 0 0;font-weight:500}.start p{font-family:Georgia,serif;color:#c4d0c9;font-size:16px}.start em{display:block;color:#91a69b;font-size:12px;font-style:normal}.rule{width:60px;height:1px;background:#84998e;margin:30px auto}.startBtns{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:550px;margin:32px auto 0}.startBtns button{padding:15px 18px;text-align:left;border:1px solid rgba(255,255,255,.18);border-radius:9px;background:rgba(255,255,255,.02);color:white;font-size:11px;letter-spacing:.15em;cursor:pointer}.startBtns button:last-child{background:#f4f1e9;color:#14271f}.startBtns small{display:block;margin-top:6px;letter-spacing:0;color:#8fa196;font-size:10px}.startBtns button:last-child small{color:#617269}.note{display:block;margin-top:16px;color:#71857b}.push img{animation:push 12s linear both}@keyframes push{from{transform:scale(1)}to{transform:scale(1.018)}}@media(max-width:800px){.split,.closing{grid-template-columns:1fr;grid-template-rows:42vh 1fr}.split.reverse .media,.split.reverse .copy{order:initial}.copy{padding:5vh 7vw}.body{font-size:clamp(18px,4.5vw,24px);line-height:1.75}.statement .body,.closing .body,.resolution .body{font-size:clamp(22px,5.5vw,31px)}.textOnly,.statement,.resolution{padding:8vh 8vw}.top{top:8px;left:8px;right:8px}.bottom{bottom:9px}.startBtns{grid-template-columns:1fr}.tap{width:12%}.divider h2{font-size:13vw}.opener h2{font-size:9vw}.drawer{right:8px;top:8px;bottom:8px}}
+/* v2.0.1 hard lock: Korean eojeol/word units must never split internally */
+.word-unit{display:inline;white-space:nowrap;word-break:normal;overflow-wrap:normal}
+.body,.copy h2,.textOnly h2,.opener h2,.divider h2,.closing .body,.resolution .body,.navItem span{
+  word-break:keep-all !important;
+  overflow-wrap:normal !important;
+  line-break:strict;
+}
+
+.media img,.hero img{image-rendering:auto;backface-visibility:hidden;transform:translateZ(0)}
+
+/* v2.2 Korean editorial master typography */
+.body p{margin:0 0 1.05em 0;word-break:keep-all;overflow-wrap:normal;line-break:strict;text-wrap:pretty}
+.body p:last-child{margin-bottom:0}
+.textOnly .body p{max-width:48em}
+.statement .body p,.closing .body p,.resolution .body p{max-width:34em}
+/* Korean punctuation / Latin proper nouns stay visually cohesive */
+.word-unit{white-space:nowrap}
+
+/* v2.3 FINAL — Author Approved Korean Typesetting */
+.body p{margin:0 0 1.05em 0;white-space:normal;word-break:keep-all;overflow-wrap:normal;line-break:strict;text-wrap:pretty}
+.body p:last-child{margin-bottom:0}
+.word-unit{display:inline;white-space:nowrap;word-break:normal;overflow-wrap:normal}
+
+/* v2.3.5 IMAGE+COPY VISIBILITY HARD FIX
+   Explicit flex columns; copy is always an opaque foreground panel. */
+.split{
+  display:flex !important;
+  flex-direction:row !important;
+  width:100% !important;
+  height:100% !important;
+  position:relative !important;
+}
+.split .media,
+.split .copy{
+  flex:0 0 50% !important;
+  width:50% !important;
+  height:100% !important;
+  min-width:0 !important;
+  position:relative !important;
+}
+.split .media{order:1;z-index:1;overflow:hidden}
+.split .copy{
+  order:2;
+  z-index:4;
+  background:#f4f1e9 !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  color:#34453d !important;
+}
+.split.reverse .copy{order:1 !important}
+.split.reverse .media{order:2 !important}
+.split .body,.split .body p,.split .word-unit{
+  opacity:1 !important;
+  visibility:visible !important;
+}
+.split .media img{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  position:relative !important;
+  z-index:1 !important;
+}
+
+.closing:not(.noimage){
+  display:flex !important;
+  flex-direction:row !important;
+  width:100% !important;
+  height:100% !important;
+}
+.closing:not(.noimage) .copy{
+  flex:0 0 54% !important;
+  width:54% !important;
+  height:100% !important;
+  z-index:4 !important;
+  background:#f4f1e9 !important;
+  opacity:1 !important;
+  visibility:visible !important;
+}
+.closing:not(.noimage) .media{
+  flex:0 0 46% !important;
+  width:46% !important;
+  height:100% !important;
+  z-index:1 !important;
+}
+.closing:not(.noimage) .body,
+.closing:not(.noimage) .body p,
+.closing:not(.noimage) .word-unit{
+  opacity:1 !important;
+  visibility:visible !important;
+}
+
+/* Do not allow 3D page-turn compositor to suppress copy layers. */
+.turn-sheet .copy,
+.scene.reveal-base .copy,
+.scene.active .copy{
+  opacity:1 !important;
+  visibility:visible !important;
+}
+
+/* Responsive mobile stacking remains explicit. */
+@media(max-width:800px){
+  .split,.closing:not(.noimage){
+    display:flex !important;
+    flex-direction:column !important;
+  }
+  .split .media,.split .copy,
+  .closing:not(.noimage) .media,.closing:not(.noimage) .copy{
+    width:100% !important;
+    flex:none !important;
+  }
+  .split .media,.closing:not(.noimage) .media{height:42vh !important}
+  .split .copy,.closing:not(.noimage) .copy{height:58vh !important}
+  .split.reverse .media{order:1 !important}
+  .split.reverse .copy{order:2 !important}
+}
+
+/* v2.3.6 build verification marker */
+#buildMark{
+ position:fixed;right:8px;bottom:5px;z-index:9999;
+ font:9px/1 Arial,sans-serif;letter-spacing:.08em;
+ color:rgba(255,255,255,.58);background:rgba(8,15,12,.46);
+ padding:4px 6px;border-radius:4px;pointer-events:none
+}
+
+
+/* Integrated exhibition wrapper mode
+   The child runtime keeps its playback DOM for parent control,
+   but does not display its own bottom command bar. */
+html.integrated-mode .bottom.chrome{
+  display:none !important;
+}
+html.integrated-mode .progress{
+  bottom:0 !important;
+}
+
+
+/* Integrated wrapper supports external 0–100% volume control. */
+html.integrated-mode #vol{
+  --rooted-integrated-volume-range:100;
+}
+
+
+/* =========================================================
+   RC8 source-resolution-aware documentary layouts
+   Actual low/mid-resolution photographs are not forced into
+   full-screen enlargement. The photo receives more space than
+   legacy 50:50 split, while text remains readable.
+   ========================================================= */
+@media(min-width:801px){
+  .split.doc56{
+    display:flex !important;
+    flex-direction:row !important;
+  }
+  .split.doc56 .media{
+    flex:0 0 56% !important;
+    width:56% !important;
+  }
+  .split.doc56 .copy{
+    flex:0 0 44% !important;
+    width:44% !important;
+    padding:6.4vh 4.1vw !important;
+  }
+  .split.doc52{
+    display:flex !important;
+    flex-direction:row !important;
+  }
+  .split.doc52 .media{
+    flex:0 0 52% !important;
+    width:52% !important;
+  }
+  .split.doc52 .copy{
+    flex:0 0 48% !important;
+    width:48% !important;
+    padding:6.2vh 4.3vw !important;
+  }
+  .split.doc56.reverse .media,
+  .split.doc52.reverse .media{order:2 !important}
+  .split.doc56.reverse .copy,
+  .split.doc52.reverse .copy{order:1 !important}
+
+  .split.doc56 .media img,
+  .split.doc52 .media img{
+    object-fit:cover !important;
+  }
+
+  .split.doc56 .copy h2,
+  .split.doc52 .copy h2{
+    font-size:clamp(34px,3.1vw,58px) !important;
+    margin-bottom:22px !important;
+  }
+  .split.doc56 .body,
+  .split.doc52 .body{
+    font-size:clamp(18px,1.28vw,25px) !important;
+    line-height:1.76 !important;
+    max-width:29em !important;
+  }
+  .split.doc56 .eyebrow,
+  .split.doc52 .eyebrow{
+    font-size:clamp(12px,.9vw,16px) !important;
+  }
+}
+
+.bottom.chrome .scene-nav-btn{
+  display:grid !important;
+  place-items:center !important;
+  visibility:visible !important;
+  opacity:1 !important;
+}
+.bottom.chrome .scene-nav-svg{
+  width:24px !important;
+  height:24px !important;
+  fill:none !important;
+  stroke:currentColor !important;
+  stroke-width:2.5 !important;
+  stroke-linecap:round !important;
+  stroke-linejoin:round !important;
+}
+
+
+/* =========================================================
+   RC8.5 TYPOGRAPHY LOCK — EN / RU
+   Segoe UI system baseline; Georgia only for editorial scenes.
+   Documentary and standard split scenes share one hierarchy.
+   ========================================================= */
+:root{
+  --rooted-sans:"Segoe UI",Arial,Helvetica,sans-serif;
+  --rooted-serif:Georgia,"Times New Roman",serif;
+}
+body,.copy,.body,.eyebrow,.volume-label,.page-label,.mode-pill{
+  font-family:var(--rooted-sans) !important;
+}
+.copy h2,.textOnly h2{
+  font-family:var(--rooted-sans) !important;
+  font-size:clamp(34px,2.55vw,50px) !important;
+  line-height:1.24 !important;
+  font-weight:600 !important;
+  letter-spacing:-.018em !important;
+  margin:10px 0 24px !important;
+}
+.opener h2{
+  font-family:var(--rooted-serif) !important;
+  font-size:clamp(42px,3.30vw,64px) !important;
+  line-height:1.20 !important;
+  font-weight:500 !important;
+  letter-spacing:-.012em !important;
+}
+.body,
+.split.doc52 .body,
+.split.doc56 .body{
+  font-family:var(--rooted-sans) !important;
+  font-size:clamp(18px,1.30vw,25px) !important;
+  line-height:1.66 !important;
+  letter-spacing:0 !important;
+}
+.statement .body,.resolution .body,.closing .body{
+  font-family:var(--rooted-serif) !important;
+  font-size:clamp(28px,1.98vw,38px) !important;
+  line-height:1.58 !important;
+  letter-spacing:0 !important;
+}
+.eyebrow{
+  font-family:var(--rooted-sans) !important;
+  font-size:clamp(11px,.78vw,15px) !important;
+  line-height:1.30 !important;
+  letter-spacing:.17em !important;
+  font-weight:600 !important;
+}
+.divider h2{
+  font-family:var(--rooted-serif) !important;
+  font-size:clamp(46px,4.25vw,82px) !important;
+  line-height:1.12 !important;
+  font-weight:500 !important;
+}
+.cover h1{
+  font-family:var(--rooted-serif) !important;
+}
+.cover p,.resolution .sub{
+  font-family:var(--rooted-sans) !important;
+}
+.split.doc52 .copy h2,.split.doc56 .copy h2{
+  font-family:var(--rooted-sans) !important;
+  font-size:clamp(34px,2.55vw,50px) !important;
+  line-height:1.24 !important;
+  margin:10px 0 24px !important;
+}
+@media(max-width:1500px){
+  .copy h2,.textOnly h2,
+  .split.doc52 .copy h2,.split.doc56 .copy h2{
+    font-size:clamp(31px,2.35vw,43px) !important;
+  }
+  .body,.split.doc52 .body,.split.doc56 .body{
+    font-size:clamp(16.5px,1.18vw,20.5px) !important;
+    line-height:1.58 !important;
+  }
+}
+
+
+/* ============================================================
+   RC8.6 ROOTED TYPOGRAPHY MASTER
+   Body typography is identical regardless of scene layout.
+   ============================================================ */
+@font-face{
+  font-family:"ROOTED Pretendard";
+  src:url("../../assets/fonts/PretendardVariable.woff2") format("woff2-variations");
+  font-style:normal;
+  font-weight:45 920;
+  font-display:swap;
+}
+
+:root{
+  --rooted-body:"ROOTED Pretendard","Pretendard Variable",Pretendard,
+                -apple-system,BlinkMacSystemFont,system-ui,
+                "Segoe UI","Malgun Gothic",Arial,sans-serif;
+  --rooted-editorial-serif:Georgia,"Times New Roman","Batang","바탕",serif;
+
+  --rooted-body-size:clamp(18px,1.30vw,25px);
+  --rooted-body-line:1.72;
+  --rooted-title-size:clamp(34px,2.55vw,50px);
+  --rooted-title-line:1.27;
+  --rooted-eyebrow-size:clamp(11px,.78vw,15px);
+}
+
+/* ---- One BODY token for every prose scene ---- */
+.body,
+.copy .body,
+.textOnly .body,
+.split .body,
+.split.doc52 .body,
+.split.doc56 .body,
+.statement .body,
+.closing .body,
+.resolution .body,
+.opener .body{
+  font-family:var(--rooted-body) !important;
+  font-size:var(--rooted-body-size) !important;
+  line-height:var(--rooted-body-line) !important;
+  font-weight:400 !important;
+  font-style:normal !important;
+  letter-spacing:0 !important;
+}
+
+/* Image/no-image general page titles are also one token */
+.copy h2,
+.textOnly h2,
+.split .copy h2,
+.split.doc52 .copy h2,
+.split.doc56 .copy h2{
+  font-family:var(--rooted-body) !important;
+  font-size:var(--rooted-title-size) !important;
+  line-height:var(--rooted-title-line) !important;
+  font-weight:600 !important;
+  font-style:normal !important;
+  letter-spacing:-.018em !important;
+  margin:10px 0 24px !important;
+}
+
+/* Small labels/meta */
+.eyebrow,
+.subtitle,
+.sub,
+.page-label,
+.mode-pill{
+  font-family:var(--rooted-body) !important;
+  font-style:normal !important;
+}
+.eyebrow{
+  font-size:var(--rooted-eyebrow-size) !important;
+  line-height:1.34 !important;
+  font-weight:600 !important;
+  letter-spacing:.16em !important;
+  text-transform:none !important;
+}
+.subtitle,.sub{
+  font-weight:500 !important;
+}
+
+/* Emphasis remains in the same family */
+.body strong,.body b{
+  font-family:var(--rooted-body) !important;
+  font-weight:600 !important;
+}
+
+/* ---- Only editorial roles may use Serif ---- */
+.cover h1,
+.divider h2,
+.opener h2{
+  font-family:var(--rooted-editorial-serif) !important;
+  font-style:normal !important;
+}
+
+/* Statement/closing prose may be larger, but NEVER a different font family */
+.statement .body,
+.closing .body,
+.resolution .body{
+  font-family:var(--rooted-body) !important;
+  font-size:clamp(27px,1.88vw,36px) !important;
+  line-height:1.62 !important;
+  font-weight:400 !important;
+}
+
+/* Journey opener heading */
+.opener h2{
+  font-size:clamp(42px,3.25vw,62px) !important;
+  line-height:1.22 !important;
+  font-weight:500 !important;
+}
+
+/* Part divider heading */
+.divider h2{
+  font-size:clamp(46px,4.10vw,78px) !important;
+  line-height:1.14 !important;
+  font-weight:500 !important;
+}
+
+/* 1366-class display safeguard: same hierarchy, smaller values */
+@media(max-width:1500px){
+  :root{
+    --rooted-body-size:clamp(17px,1.20vw,21px);
+    --rooted-title-size:clamp(31px,2.35vw,43px);
+    --rooted-eyebrow-size:clamp(10px,.74vw,14px);
+  }
+  .statement .body,
+  .closing .body,
+  .resolution .body{
+    font-size:clamp(24px,1.70vw,31px) !important;
+    line-height:1.56 !important;
+  }
+  .opener h2{
+    font-size:clamp(38px,3.0vw,54px) !important;
+  }
+}
+
+/* Hard reset against legacy layout-specific font-family overrides */
+.canvas p,
+.canvas .body,
+.canvas .copy,
+.canvas .copy p,
+.canvas .textOnly,
+.canvas .statement,
+.canvas .closing,
+.canvas .resolution{
+  font-family:var(--rooted-body) !important;
+}
+
+
+/* ============================================================
+   RC8.7 HARD BODY SIZE LOCK
+   ABSOLUTE RULE:
+   image / no-image / split / documentary / text-only /
+   statement / closing / resolution / opener BODY = SAME SIZE.
+   ============================================================ */
+:root{
+  --rooted-body-fixed:24px;
+  --rooted-body-leading:1.72;
+}
+
+/* Every prose body container is exactly the same size */
+.body,
+.copy .body,
+.textOnly .body,
+.split .body,
+.split.doc52 .body,
+.split.doc56 .body,
+.statement .body,
+.closing .body,
+.closing.noimage .body,
+.resolution .body,
+.opener .body{
+  font-family:var(--rooted-body) !important;
+  font-size:var(--rooted-body-fixed) !important;
+  line-height:var(--rooted-body-leading) !important;
+  font-weight:400 !important;
+  font-style:normal !important;
+  letter-spacing:0 !important;
+}
+
+/* Legacy child rules are not allowed to change body size */
+.body p,
+.body span,
+.body em,
+.body strong,
+.body b,
+.body .word-unit,
+.copy .body p,
+.textOnly .body p,
+.statement .body p,
+.closing .body p,
+.resolution .body p,
+.opener .body p{
+  font-size:inherit !important;
+  line-height:inherit !important;
+  font-family:inherit !important;
+}
+
+/* Strong/bold only changes weight — never size or family */
+.body strong,
+.body b{
+  font-weight:600 !important;
+}
+
+/* Width/padding may differ by layout; type size may not */
+.textOnly .body,
+.statement .body,
+.closing .body,
+.resolution .body{
+  max-width:49em !important;
+}
+.split .body,
+.split.doc52 .body,
+.split.doc56 .body{
+  max-width:34em !important;
+}
+
+/* 1366-class display: all body text steps down TOGETHER */
+@media(max-width:1500px){
+  :root{
+    --rooted-body-fixed:21px;
+    --rooted-body-leading:1.68;
+  }
+}
+
+/* Small-screen fallback: still one size across every scene */
+@media(max-width:900px){
+  :root{
+    --rooted-body-fixed:19px;
+    --rooted-body-leading:1.64;
+  }
+}
+
+/* ============================================================
+   RC8.8 LANGUAGE-SPECIFIC BODY MAXIMUM HARD LOCK — EN
+   Same body size within this language across EVERY scene type.
+   ============================================================ */
+:root{--rooted-body-fixed:38px;--rooted-body-leading:1.56;}
+.body,.copy .body,.textOnly .body,.split .body,.split.doc52 .body,.split.doc56 .body,
+.statement .body,.closing .body,.closing.noimage .body,.resolution .body,.opener .body{
+  font-size:var(--rooted-body-fixed) !important;
+  line-height:var(--rooted-body-leading) !important;
+  font-family:var(--rooted-body) !important;
+  font-weight:400 !important;
+  letter-spacing:0 !important;
+}
+.body p,.body span,.body em,.body strong,.body b,.body .word-unit,
+.copy .body p,.textOnly .body p,.statement .body p,.closing .body p,.resolution .body p,.opener .body p{
+  font-size:inherit !important;line-height:inherit !important;font-family:inherit !important;
+}
+.body strong,.body b{font-weight:600 !important;}
+@media(max-width:1500px){:root{--rooted-body-fixed:26px;}}
+@media(max-width:900px){:root{--rooted-body-fixed:22px;}}
+
+/* RC8.8 integrated-height layout safeguard: font size stays locked; only text-only paragraph spacing is compacted. */
+.textOnly .body p{margin:0 0 .72em 0 !important;}
+.textOnly .body p:last-child{margin-bottom:0 !important;}
+
+
+/* ============================================================
+   RC8.9 FAMILY VISUAL FINAL LOCK
+   j9-04: relationship-centered Korean multigenerational family.
+   Typography sizes remain exactly as RC8.8 language hard-lock.
+   ============================================================ */
+@media(min-width:801px){
+  .split.family65{
+    display:flex !important;
+    flex-direction:row !important;
+  }
+  .split.family65 .media{
+    flex:0 0 65% !important;
+    width:65% !important;
+  }
+  .split.family65 .copy{
+    flex:0 0 35% !important;
+    width:35% !important;
+    padding:5.0vh 2.4vw !important;
+  }
+  .split.family65.reverse .media{order:2 !important;}
+  .split.family65.reverse .copy{order:1 !important;}
+  .split.family65 .media img{
+    object-fit:cover !important;
+    object-position:center center !important;
+  }
+  .split.family65 .body{
+    max-width:100% !important;
+  }
+}
+
+
+/* ============================================================
+   V9.0.1 TYPOGRAPHY REBALANCE — EN
+   Editorial exceptions only:
+   1) opening-statement is quieter than main body
+   2) Prologue Letter is a long-form reading page
+   ALL remaining body scenes stay hard-locked.
+   ============================================================ */
+
+/* Main body remains absolutely consistent, excluding only the two approved intro roles. */
+.canvas:not(.openingQuote):not(.letter) .body {
+  font-size:38px !important;
+}
+
+/* Opening statement: deliberately quieter than normal body. */
+.split.openingQuote .body {
+  font-size:32px !important;
+  line-height:1.66 !important;
+  max-width:34em !important;
+}
+
+/* A Letter / long-form Prologue: smaller type + more breathing room. */
+.textOnly.letter {
+  padding:7vh 11vw !important;
+}
+.textOnly.letter h2 {
+  font-size:42px !important;
+  line-height:1.22 !important;
+  margin:8px 0 18px !important;
+}
+.textOnly.letter .body {
+  font-size:27px !important;
+  line-height:1.66 !important;
+  max-width:52em !important;
+}
+.textOnly.letter .body p {
+  margin:0 0 .58em 0 !important;
+}
+.textOnly.letter .body p:last-child {
+  margin-bottom:0 !important;
+}
+
+@media(max-width:1500px) {
+  .canvas:not(.openingQuote):not(.letter) .body {
+    font-size:26px !important;
+  }
+  .split.openingQuote .body {
+    font-size:23px !important;
+    line-height:1.62 !important;
+  }
+  .textOnly.letter {
+    padding:6.5vh 9vw !important;
+  }
+  .textOnly.letter h2 {
+    font-size:36px !important;
+    margin-bottom:14px !important;
+  }
+  .textOnly.letter .body {
+    font-size:19px !important;
+    line-height:1.62 !important;
+  }
+  .textOnly.letter .body p {
+    margin-bottom:.52em !important;
+  }
+}
+
+@media(max-width:900px) {
+  .canvas:not(.openingQuote):not(.letter) .body {
+    font-size:22px !important;
+  }
+  .split.openingQuote .body {
+    font-size:20px !important;
+  }
+  .textOnly.letter h2 {
+    font-size:32px !important;
+  }
+  .textOnly.letter .body {
+    font-size:18px !important;
+  }
+}
+
+
+/* ============================================================
+   V9.0.5 ENDING HANDWRITING STAGE — EN
+   The journey line appears once. Signoff + signature close the book quietly.
+   ============================================================ */
+.canvas.resolution{
+  position:relative !important;
+  padding-bottom:12vh !important;
+}
+.canvas.resolution .body{
+  margin-bottom:0 !important;
+}
+.canvas.resolution .sub{
+  margin-top:28px !important;
+}
+.finalSignoff{
+  position:absolute;
+  left:12vw;
+  bottom:6.8vh;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:1px;
+  color:#6d7b73;
+  opacity:.90;
+  pointer-events:none;
+}
+.finalSignoff .hand{
+  font-family:"Caveat",cursive !important;
+  font-size:29px !important;
+  line-height:1.18 !important;
+  letter-spacing:0 !important;
+  font-weight:400 !important;
+  transform:rotate(-1deg);
+  transform-origin:left center;
+}
+.finalSignoff .signature{
+  font-family:"Caveat",cursive !important;
+  font-size:42px !important;
+  line-height:1.0 !important;
+  font-weight:600 !important;
+  letter-spacing:.01em !important;
+  color:#465a50;
+  transform:rotate(-3deg);
+  transform-origin:left center;
+  margin-top:2px;
+}
+@media(max-width:1500px){
+  .canvas.resolution{padding-bottom:11vh !important;}
+  .finalSignoff{left:10vw;bottom:6.2vh;}
+  .finalSignoff .hand{font-size:22px !important;}
+  .finalSignoff .signature{font-size:34px !important;}
+}
+@media(max-width:900px){
+  .canvas.resolution{padding-bottom:13vh !important;}
+  .finalSignoff{left:8vw;bottom:5.4vh;}
+  .finalSignoff .hand{font-size:20px !important;}
+  .finalSignoff .signature{font-size:30px !important;}
+}
+
+
+/* ============================================================
+   v2.1.17 EN GENERAL BODY TYPOGRAPHY UNIFICATION LOCK
+   General English body size is independent of image/no-image/closing layout.
+   Special editorial roles remain separate.
+   ============================================================ */
+
+/* General body: image / no-image / statement / closing unified */
+.canvas:not(.openingQuote):not(.letter):not(.resolution) .body {
+  font-size:28px !important;
+}
+
+/* Special editorial roles */
+.canvas.split.openingQuote .body {
+  font-size:32px !important;
+}
+.canvas.textOnly.letter .body {
+  font-size:28px !important;
+}
+.canvas.resolution .body {
+  font-size:32px !important;
+}
+
+@media(max-width:1500px){
+  .canvas:not(.openingQuote):not(.letter):not(.resolution) .body {
+    font-size:21px !important;
+  }
+  .canvas.split.openingQuote .body {
+    font-size:23px !important;
+  }
+  .canvas.textOnly.letter .body {
+    font-size:20px !important;
+  }
+  .canvas.resolution .body {
+    font-size:23px !important;
+  }
+}
+
+@media(max-width:900px){
+  .canvas:not(.openingQuote):not(.letter):not(.resolution) .body {
+    font-size:18px !important;
+  }
+  .canvas.split.openingQuote .body {
+    font-size:20px !important;
+  }
+  .canvas.textOnly.letter .body {
+    font-size:18px !important;
+  }
+  .canvas.resolution .body {
+    font-size:19px !important;
+  }
+}
+
+
+/* ============================================================
+   v2.1.20 RC1 TEXT GEOMETRY HARD LOCK
+   Windows acceptance correction: prose/title baselines must be horizontal.
+   ============================================================ */
+.canvas .body,
+.canvas .body p,
+.canvas .body .word-unit,
+.canvas .copy h2,
+.canvas.textOnly h2,
+.canvas.opener h2 {
+  transform:none !important;
+  rotate:0deg !important;
+  writing-mode:horizontal-tb !important;
+}
+
+/* v2.1.20 RC1 — EN closing sign-off alignment correction */
+.finalSignoff .hand,
+.finalSignoff .signature{
+  transform:none !important;
+  rotate:0deg !important;
+  transform-origin:left center !important;
+}

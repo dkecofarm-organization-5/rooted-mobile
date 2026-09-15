@@ -1,0 +1,11 @@
+{
+  "release": "ROOTED KR/EN/RU Integrated Exhibition Player v1.1.7 ROUTING FIX",
+  "rootCause": "Static server failed to strip /player/ prefix for relative assets and runtime iframes.",
+  "playerPrefixStripping": true,
+  "managerPrefixStripping": true,
+  "cssExpected": "/player/player.css -> root/player.css",
+  "assetsExpected": "/player/assets/* -> root/assets/*",
+  "runtimeExpected": "/player/runtime/* -> root/runtime/*",
+  "stateFolderVersion": "v1.1.7",
+  "previousUIFixesRetained": true
+}

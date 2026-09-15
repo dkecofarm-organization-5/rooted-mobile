@@ -1,0 +1,49 @@
+{
+  "version": "V4",
+  "status": "AUDIO_GENERATION_PENDING_RATE_LIMIT",
+  "variations": [
+    {
+      "id": "A",
+      "name": "Warm Piano"
+    },
+    {
+      "id": "B",
+      "name": "Human Acoustic"
+    },
+    {
+      "id": "C",
+      "name": "Open Horizon"
+    }
+  ],
+  "playback": {
+    "sequence": [
+      "A",
+      "B",
+      "C"
+    ],
+    "fadeInSeconds": 2.5,
+    "fadeOutSeconds": 3.5,
+    "silenceBetweenSeconds": 1.5,
+    "selfCrossfadeLoop": false
+  },
+  "languageTiming": {
+    "KR": {
+      "approxTotalSeconds": 904
+    },
+    "EN": {
+      "approxTotalSeconds": 1068
+    },
+    "RU": {
+      "approxTotalSeconds": 991.5
+    }
+  },
+  "principles": [
+    "shared score DNA across A/B/C",
+    "chapter-context four-part arrangement arc",
+    "separate timing edition for KR/EN/RU",
+    "Passing Hope and Final Resolution aligned independently per language",
+    "cello reduced to brief supporting accents",
+    "classical guitar and light strings broaden arrangement",
+    "clear fade-out, silence, then next variation starts from 0:00"
+  ]
+}

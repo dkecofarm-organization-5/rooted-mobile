@@ -1,0 +1,20 @@
+{
+  "release": "ROOTED KR/EN/RU Integrated Exhibition Player v1.1.8 Volume Control",
+  "range": {
+    "min": 0,
+    "max": 100,
+    "step": 5
+  },
+  "default": 40,
+  "controls": [
+    "Mute/Unmute",
+    "Volume-",
+    "Current %",
+    "Volume+"
+  ],
+  "persistsAcrossLanguageSwitchWithinSession": true,
+  "appliesToActiveLanguage": true,
+  "previousRoutingFixRetained": true,
+  "previousFullscreenBrandFixRetained": true,
+  "timingManagerRetained": true
+}

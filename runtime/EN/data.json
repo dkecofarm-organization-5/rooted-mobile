@@ -1,0 +1,1703 @@
+{
+  "version": "ROOTED v2.1.20 RC1",
+  "sceneCount": 94,
+  "scenes": [
+    {
+      "id": "cover",
+      "kind": "cover",
+      "section": "ROOTED",
+      "eyebrow": "VOLUME 1 · ENGLISH LANDSCAPE EXHIBITION EDITION",
+      "title": "ROOTED",
+      "subtitle": "The Story and Philosophy of DK EcoFarm",
+      "duration": 9,
+      "cue": "01_ROOTS",
+      "index": 1
+    },
+    {
+      "id": "opening-image",
+      "kind": "hero",
+      "section": "OPENING",
+      "image": "assets/p002.jpg",
+      "duration": 8,
+      "cue": "01_ROOTS",
+      "index": 2
+    },
+    {
+      "id": "opening-statement",
+      "kind": "split",
+      "section": "OPENING",
+      "image": "assets/p003.jpg",
+      "imageSide": "left",
+      "body": "I hope this book will become a record that people who build technology, start companies, conduct research, and begin their journey in agriculture might one day open again—and find the courage to rise once more.",
+      "duration": 11,
+      "cue": "01_ROOTS",
+      "index": 3,
+      "paragraphs": [
+        "I hope this book will become a record that people who build technology, start companies, conduct research, and begin their journey in agriculture might one day open again—and find the courage to rise once more."
+      ],
+      "layout": "openingQuote",
+      "typographyQA": {
+        "role": "opening narrative statement",
+        "specialBodySize": true,
+        "reason": "Opening copy should breathe more quietly than the main body."
+      }
+    },
+    {
+      "id": "prologue-1",
+      "kind": "text",
+      "section": "PROLOGUE",
+      "eyebrow": "PROLOGUE",
+      "title": "A Letter",
+      "body": "This book was not created to explain our company. It was created to record why we began this work—and what we are determined to protect.\n\nAgriculture is one of humanity’s oldest promises. We have planted seeds, waited through the seasons, and protected one another’s tables. Before agriculture became an industry, it was a way of life. Before it became a field of technology, it was a promise between people and nature.\n\nAs the climate changes, rural communities grow older, and uncertainty in agriculture increases, more sophisticated technology has become necessary. But technology must never stand ahead of people.",
+      "duration": 28,
+      "cue": "01_ROOTS",
+      "index": 4,
+      "paragraphs": [
+        "This book was not created to explain our company. It was created to record why we began this work—and what we are determined to protect.",
+        "Agriculture is one of humanity’s oldest promises. We have planted seeds, waited through the seasons, and protected one another’s tables. Before agriculture became an industry, it was a way of life. Before it became a field of technology, it was a promise between people and nature.",
+        "As the climate changes, rural communities grow older, and uncertainty in agriculture increases, more sophisticated technology has become necessary. But technology must never stand ahead of people."
+      ],
+      "layout": "letter",
+      "typographyQA": {
+        "role": "long-form prologue letter",
+        "specialBodySize": true,
+        "reason": "Long-form letter must remain comfortable in non-fullscreen / integrated-height viewing."
+      }
+    },
+    {
+      "id": "j0-open",
+      "kind": "opener",
+      "section": "JOURNEY 0",
+      "eyebrow": "JOURNEY 0",
+      "title": "What We Learned Before Technology",
+      "subtitle": "",
+      "duration": 6,
+      "cue": "01_ROOTS",
+      "index": 7
+    },
+    {
+      "id": "j0-01",
+      "kind": "statement",
+      "section": "JOURNEY 0",
+      "body": "In the beginning, there was soil. People touched the earth, planted seeds, and learned how to wait. Agriculture meant reading the seasons, sharing water, and remembering the ways of light and wind.",
+      "duration": 10,
+      "cue": "01_ROOTS",
+      "index": 8,
+      "paragraphs": [
+        "In the beginning, there was soil. People touched the earth, planted seeds, and learned how to wait. Agriculture meant reading the seasons, sharing water, and remembering the ways of light and wind."
+      ]
+    },
+    {
+      "id": "j0-02",
+      "kind": "split",
+      "section": "JOURNEY 0",
+      "body": "But the conditions surrounding agriculture changed. The seasons no longer moved as they once had. Labor became harder to find, while the costs of energy and water continued to rise. Farming had to absorb more uncertainty than before.",
+      "duration": 12,
+      "cue": "01_ROOTS",
+      "image": "assets/p009.jpg",
+      "imageSide": "right",
+      "index": 9,
+      "paragraphs": [
+        "But the conditions surrounding agriculture changed. The seasons no longer moved as they once had. Labor became harder to find, while the costs of energy and water continued to rise. Farming had to absorb more uncertainty than before."
+      ]
+    },
+    {
+      "id": "j0-04",
+      "kind": "split",
+      "section": "JOURNEY 0",
+      "body": "Yet more technology did not necessarily make agriculture better. Alarms sounded without explaining what had gone wrong. Screens displayed numbers, but there were moments when they offered no clear answer about what should be done next.",
+      "duration": 11,
+      "cue": "01_ROOTS",
+      "image": "assets/p011.jpg",
+      "imageSide": "right",
+      "index": 11,
+      "paragraphs": [
+        "Yet more technology did not necessarily make agriculture better. Alarms sounded without explaining what had gone wrong. Screens displayed numbers, but there were moments when they offered no clear answer about what should be done next."
+      ]
+    },
+    {
+      "id": "j0-05",
+      "kind": "statement",
+      "section": "JOURNEY 0",
+      "body": "That was when the question changed. The issue was no longer what else we could build, but whom the technology was truly for. Would it support human judgment—or become yet another burden?",
+      "duration": 11,
+      "cue": "01_ROOTS",
+      "index": 12,
+      "paragraphs": [
+        "That was when the question changed. The issue was no longer what else we could build, but whom the technology was truly for. Would it support human judgment—or become yet another burden?"
+      ]
+    },
+    {
+      "id": "j0-close",
+      "kind": "closing",
+      "section": "JOURNEY 0 · CLOSING",
+      "eyebrow": "JOURNEY 0 · CLOSING",
+      "body": "Before we built anything, we listened—to the soil, the crops, and the people who had stood beside them for years. Technology came later.",
+      "image": "assets/p013.jpg",
+      "duration": 12,
+      "cue": "01_ROOTS",
+      "index": 13,
+      "paragraphs": [
+        "Before we built anything, we listened—to the soil, the crops, and the people who had stood beside them for years. Technology came later."
+      ]
+    },
+    {
+      "id": "j1-open",
+      "kind": "opener",
+      "section": "JOURNEY 1",
+      "eyebrow": "JOURNEY 1",
+      "title": "The Answer Was in the Field",
+      "subtitle": "",
+      "duration": 6,
+      "cue": "02_FIELD",
+      "index": 14
+    },
+    {
+      "id": "j1-01",
+      "kind": "split",
+      "section": "JOURNEY 1",
+      "body": "We went into the field to build technology. At first, we believed that sensors and data would tell us more.",
+      "image": "assets/p015.jpg",
+      "imageSide": "right",
+      "duration": 9,
+      "cue": "02_FIELD",
+      "index": 15,
+      "paragraphs": [
+        "We went into the field to build technology. At first, we believed that sensors and data would tell us more."
+      ]
+    },
+    {
+      "id": "j1-02",
+      "kind": "statement",
+      "section": "JOURNEY 1",
+      "body": "Even when the numbers stayed within the normal range, the crops were not always doing well. The same variety under the same settings could respond differently as the season, the weather, or even small changes within a single day shifted.",
+      "duration": 12,
+      "cue": "02_FIELD",
+      "index": 16,
+      "paragraphs": [
+        "Even when the numbers stayed within the normal range, the crops were not always doing well. The same variety under the same settings could respond differently as the season, the weather, or even small changes within a single day shifted."
+      ]
+    },
+    {
+      "id": "j1-03",
+      "kind": "statement",
+      "section": "JOURNEY 1",
+      "body": "Before looking at the numbers, growers looked at the leaves, examined the roots, and felt the air. We did not dismiss that judgment as outdated instinct. We accepted it as knowledge we needed to learn.",
+      "duration": 11,
+      "cue": "02_FIELD",
+      "index": 17,
+      "paragraphs": [
+        "Before looking at the numbers, growers looked at the leaves, examined the roots, and felt the air. We did not dismiss that judgment as outdated instinct. We accepted it as knowledge we needed to learn."
+      ]
+    },
+    {
+      "id": "j1-04",
+      "kind": "split",
+      "section": "JOURNEY 1",
+      "body": "At times, a few words from a farm owner offered a more important clue than thousands of data points. Numbers showed us what was happening. Human experience helped explain why those numbers had changed.",
+      "image": "assets/p017.jpg",
+      "imageSide": "left",
+      "duration": 11,
+      "cue": "02_FIELD",
+      "index": 18,
+      "paragraphs": [
+        "At times, a few words from a farm owner offered a more important clue than thousands of data points. Numbers showed us what was happening. Human experience helped explain why those numbers had changed."
+      ]
+    },
+    {
+      "id": "j1-06",
+      "kind": "statement",
+      "section": "JOURNEY 1",
+      "body": "Through that process, our question changed again. The goal was no longer to make machines as intelligent as possible. It was to understand crops and people more deeply.",
+      "duration": 10,
+      "cue": "02_FIELD",
+      "index": 20,
+      "paragraphs": [
+        "Through that process, our question changed again. The goal was no longer to make machines as intelligent as possible. It was to understand crops and people more deeply."
+      ]
+    },
+    {
+      "id": "j2-open",
+      "kind": "opener",
+      "section": "JOURNEY 2",
+      "eyebrow": "JOURNEY 2",
+      "title": "We Went to Teach, and Learned First",
+      "subtitle": "",
+      "duration": 6,
+      "cue": "03_ENCOUNTER",
+      "index": 23
+    },
+    {
+      "id": "j2-01",
+      "kind": "split",
+      "section": "JOURNEY 2",
+      "body": "Three agricultural sites in Uzbekistan showed us what we needed to learn before we could speak about technology. There, agriculture was food and livelihood. It was a foundation supporting local communities and the future of the nation.",
+      "duration": 12,
+      "cue": "03_ENCOUNTER",
+      "index": 24,
+      "paragraphs": [
+        "Three agricultural sites in Uzbekistan showed us what we needed to learn before we could speak about technology. There, agriculture was food and livelihood. It was a foundation supporting local communities and the future of the nation."
+      ],
+      "image": "assets/documentary_rc8/j2-01.jpg",
+      "imageSide": "left",
+      "layout": "doc56"
+    },
+    {
+      "id": "j2-02",
+      "kind": "statement",
+      "section": "JOURNEY 2",
+      "body": "Local professors, students, and agricultural professionals wanted to learn about precision sensors, automated control, smart greenhouses, and soilless cultivation. Their determination to apply new technology to their own fields was greater than we had expected.",
+      "duration": 11,
+      "cue": "03_ENCOUNTER",
+      "index": 25,
+      "paragraphs": [
+        "Local professors, students, and agricultural professionals wanted to learn about precision sensors, automated control, smart greenhouses, and soilless cultivation. Their determination to apply new technology to their own fields was greater than we had expected."
+      ]
+    },
+    {
+      "id": "j2-03",
+      "kind": "statement",
+      "section": "JOURNEY 2",
+      "body": "But the closer we came to the field, the clearer the differences became. The way equipment was operated, the level of understanding of sensors, and the process of tracing the cause of a malfunction were all different. Installing high-quality equipment alone could not close those gaps.",
+      "duration": 14,
+      "cue": "03_ENCOUNTER",
+      "index": 26,
+      "paragraphs": [
+        "But the closer we came to the field, the clearer the differences became. The way equipment was operated, the level of understanding of sensors, and the process of tracing the cause of a malfunction were all different. Installing high-quality equipment alone could not close those gaps."
+      ]
+    },
+    {
+      "id": "j2-04",
+      "kind": "split",
+      "section": "JOURNEY 2",
+      "body": "More precise and more complex equipment was not always the better answer. If users could not understand it, adjust its settings, or respond after a failure, technology could create a new dependency instead of offering real support.",
+      "image": "assets/documentary_rc8/j2-04.jpg",
+      "imageSide": "right",
+      "duration": 12,
+      "cue": "03_ENCOUNTER",
+      "index": 27,
+      "paragraphs": [
+        "More precise and more complex equipment was not always the better answer. If users could not understand it, adjust its settings, or respond after a failure, technology could create a new dependency instead of offering real support."
+      ],
+      "layout": "doc56"
+    },
+    {
+      "id": "j2-05",
+      "kind": "text",
+      "section": "JOURNEY 2",
+      "body": "And we soon realized something else. There was already a deep body of agricultural knowledge there. They understood their climate, soil, crops, and seasons through years of experience. That knowledge simply had not yet been fully translated into the language of a system.",
+      "duration": 13,
+      "cue": "03_ENCOUNTER",
+      "index": 28,
+      "paragraphs": [
+        "And we soon realized something else. There was already a deep body of agricultural knowledge there. They understood their climate, soil, crops, and seasons through years of experience. That knowledge simply had not yet been fully translated into the language of a system."
+      ]
+    },
+    {
+      "id": "j2-06",
+      "kind": "statement",
+      "section": "JOURNEY 2",
+      "body": "So the question changed. It was no longer how much of our technology we could transfer. It became how their experience could be recorded, translated into operational rules, and revised by them as conditions changed.",
+      "duration": 11,
+      "cue": "03_ENCOUNTER",
+      "index": 29,
+      "paragraphs": [
+        "So the question changed. It was no longer how much of our technology we could transfer. It became how their experience could be recorded, translated into operational rules, and revised by them as conditions changed."
+      ]
+    },
+    {
+      "id": "j2-close",
+      "kind": "closing",
+      "section": "JOURNEY 2 · CLOSING",
+      "eyebrow": "JOURNEY 2 · CLOSING",
+      "body": "We went there to share technology. But first, we had to learn.",
+      "duration": 12,
+      "cue": "03_ENCOUNTER",
+      "index": 30,
+      "paragraphs": [
+        "We went there to share technology. But first, we had to learn."
+      ]
+    },
+    {
+      "id": "j3-open",
+      "kind": "opener",
+      "section": "JOURNEY 3",
+      "eyebrow": "JOURNEY 3",
+      "title": "What Technology Should Leave Behind",
+      "subtitle": "",
+      "duration": 6,
+      "cue": "03_ENCOUNTER",
+      "index": 31
+    },
+    {
+      "id": "j3-01",
+      "kind": "split",
+      "section": "JOURNEY 3",
+      "body": "We did not want to hand over only a completed facility. We invited local professors and students to learn how the sensors worked, examine where they should be installed, and mount and connect the equipment themselves.",
+      "image": "assets/evergreen_v2/j3-01.jpg",
+      "imageSide": "right",
+      "duration": 11,
+      "cue": "03_ENCOUNTER",
+      "index": 32,
+      "paragraphs": [
+        "We did not want to hand over only a completed facility. We invited local professors and students to learn how the sensors worked, examine where they should be installed, and mount and connect the equipment themselves."
+      ]
+    },
+    {
+      "id": "j3-02",
+      "kind": "statement",
+      "section": "JOURNEY 3",
+      "body": "Technology learned by doing was different from technology learned from a manual. When people had installed the equipment themselves, they could begin to reason through where to look first when something failed. They could explain the principles of operation in their own words.",
+      "duration": 13,
+      "cue": "03_ENCOUNTER",
+      "index": 33,
+      "paragraphs": [
+        "Technology learned by doing was different from technology learned from a manual. When people had installed the equipment themselves, they could begin to reason through where to look first when something failed. They could explain the principles of operation in their own words."
+      ]
+    },
+    {
+      "id": "j3-03",
+      "kind": "split",
+      "section": "JOURNEY 3",
+      "body": "On the day we moved the growing medium into the greenhouse, the school paused its classes. Students and professors carried the bags together, passed them from one person to the next, and prepared for the work that followed. It was demanding work, but their faces were bright.",
+      "image": "assets/p030.jpg",
+      "imageSide": "right",
+      "duration": 14,
+      "cue": "03_ENCOUNTER",
+      "index": 34,
+      "paragraphs": [
+        "On the day we moved the growing medium into the greenhouse, the school paused its classes. Students and professors carried the bags together, passed them from one person to the next, and prepared for the work that followed. It was demanding work, but their faces were bright."
+      ]
+    },
+    {
+      "id": "j3-04",
+      "kind": "statement",
+      "section": "JOURNEY 3",
+      "body": "They were not standing beside a facility someone else had built for them. They were building, with their own hands, the farm they themselves would operate.",
+      "duration": 10,
+      "cue": "03_ENCOUNTER",
+      "index": 35,
+      "paragraphs": [
+        "They were not standing beside a facility someone else had built for them. They were building, with their own hands, the farm they themselves would operate."
+      ]
+    },
+    {
+      "id": "j3-05",
+      "kind": "split",
+      "section": "JOURNEY 3",
+      "body": "Watching them, we reconsidered what development cooperation should mean. It was not enough for us to build on their behalf. They needed to understand it, build it, operate it, and eventually teach it to the next person.",
+      "image": "assets/p032.jpg",
+      "imageSide": "right",
+      "duration": 12,
+      "cue": "03_ENCOUNTER",
+      "index": 36,
+      "paragraphs": [
+        "Watching them, we reconsidered what development cooperation should mean. It was not enough for us to build on their behalf. They needed to understand it, build it, operate it, and eventually teach it to the next person."
+      ]
+    },
+    {
+      "id": "j3-06",
+      "kind": "statement",
+      "section": "JOURNEY 3",
+      "body": "Capability had to remain after the facility was completed. More important than leaving equipment behind was leaving confidence. Technology needed to combine with local experience and continue evolving into a way of operating suited to that place.",
+      "duration": 12,
+      "cue": "03_ENCOUNTER",
+      "index": 37,
+      "paragraphs": [
+        "Capability had to remain after the facility was completed. More important than leaving equipment behind was leaving confidence. Technology needed to combine with local experience and continue evolving into a way of operating suited to that place."
+      ]
+    },
+    {
+      "id": "j3-07",
+      "kind": "statement",
+      "section": "JOURNEY 3",
+      "body": "That experience also stayed with us in the way we thought about FarmTOS. People must be able to explain their intentions to the system. The system, in turn, must be able to explain the basis of its judgment and suggest a safer course of action.\n\nTechnology should not command. It should be a tool that converses with people and learns alongside them.",
+      "duration": 18,
+      "cue": "03_ENCOUNTER",
+      "index": 38,
+      "paragraphs": [
+        "That experience also stayed with us in the way we thought about FarmTOS. People must be able to explain their intentions to the system. The system, in turn, must be able to explain the basis of its judgment and suggest a safer course of action.",
+        "Technology should not command. It should be a tool that converses with people and learns alongside them."
+      ]
+    },
+    {
+      "id": "j3-close",
+      "kind": "closing",
+      "section": "JOURNEY 3 · CLOSING",
+      "eyebrow": "JOURNEY 3 · CLOSING",
+      "body": "Only when a farm can continue to operate after we leave does the technology truly become theirs. We did not want to leave technology behind. We wanted to leave behind the strength to make that technology their own.",
+      "duration": 12,
+      "cue": "03_ENCOUNTER",
+      "index": 39,
+      "paragraphs": [
+        "Only when a farm can continue to operate after we leave does the technology truly become theirs. We did not want to leave technology behind. We wanted to leave behind the strength to make that technology their own."
+      ]
+    },
+    {
+      "id": "bridge-who-we-are",
+      "kind": "split",
+      "section": "DK ECOFARM",
+      "eyebrow": "DK ECOFARM",
+      "title": "Who We Are",
+      "body": "Technology that began in the greenhouse.\n\nDK EcoFarm develops integrated smart-agriculture technologies for greenhouse, indoor, and open-field production. Our work connects sensing, environmental control, irrigation, safety, data, edge computing, cloud services, and AI within one operating architecture.\n\nAgricultural technology that people can understand, trust, and continue to improve.",
+      "duration": 16,
+      "cue": "03_ENCOUNTER",
+      "index": 39.1,
+      "evergreenScene": true,
+      "paragraphs": [
+        "Technology that began in the greenhouse.",
+        "DK EcoFarm develops integrated smart-agriculture technologies for greenhouse, indoor, and open-field production. Our work connects sensing, environmental control, irrigation, safety, data, edge computing, cloud services, and AI within one operating architecture.",
+        "Agricultural technology that people can understand, trust, and continue to improve."
+      ],
+      "image": "assets/documentary_rc8/bridge-who-we-are.jpg",
+      "imageSide": "left",
+      "languageQA": {
+        "rc5Editorial": "Evergreen inserted-scene English copy tightened for natural screen reading."
+      },
+      "timingQA": {
+        "rc5": {
+          "previousDuration": 14,
+          "newDuration": 16,
+          "reason": "Inserted-scene dwell time normalized against existing language-runtime text density."
+        }
+      },
+      "layout": "doc56"
+    },
+    {
+      "id": "bridge-what-we-build",
+      "kind": "split",
+      "section": "DK ECOFARM",
+      "eyebrow": "DK ECOFARM",
+      "title": "What We Build",
+      "body": "A smart farm is not one room.\n\nThe cultivation space, machine room, and control interface each perform different roles. FarmTOS connects them through data, control logic, and human judgment so physically separated systems can operate as one.\n\nFrom greenhouses and indoor farms to container and open-field systems, facilities differ, but the operating principles remain consistent.",
+      "duration": 18,
+      "cue": "03_ENCOUNTER",
+      "index": 39.2,
+      "evergreenScene": true,
+      "paragraphs": [
+        "A smart farm is not one room.",
+        "The cultivation space, machine room, and control interface each perform different roles. FarmTOS connects them through data, control logic, and human judgment so physically separated systems can operate as one.",
+        "From greenhouses and indoor farms to container and open-field systems, facilities differ, but the operating principles remain consistent."
+      ],
+      "image": "assets/documentary_rc8/bridge-what-we-build.jpg",
+      "imageSide": "left",
+      "languageQA": {
+        "rc5Editorial": "Evergreen inserted-scene English copy tightened for natural screen reading."
+      },
+      "timingQA": {
+        "rc5": {
+          "previousDuration": 14,
+          "newDuration": 18,
+          "reason": "Inserted-scene dwell time normalized against existing language-runtime text density."
+        }
+      },
+      "layout": "doc52"
+    },
+    {
+      "id": "j4-open",
+      "kind": "opener",
+      "section": "JOURNEY 4",
+      "eyebrow": "JOURNEY 4",
+      "title": "We Didn't Collect Data. We Built Trust",
+      "subtitle": "",
+      "duration": 6,
+      "cue": "04_TRUST",
+      "index": 41
+    },
+    {
+      "id": "j4-01",
+      "kind": "split",
+      "section": "JOURNEY 4",
+      "body": "Data reveals much about agriculture. It records temperature and humidity, light and carbon dioxide, irrigation and drainage, and the ways crops respond.",
+      "duration": 9,
+      "cue": "04_TRUST",
+      "index": 42,
+      "paragraphs": [
+        "Data reveals much about agriculture. It records temperature and humidity, light and carbon dioxide, irrigation and drainage, and the ways crops respond."
+      ],
+      "image": "assets/documentary_rc8/j4-01.jpg",
+      "imageSide": "left",
+      "layout": "doc56"
+    },
+    {
+      "id": "j4-02",
+      "kind": "statement",
+      "section": "JOURNEY 4",
+      "body": "Numbers alone do not earn trust. We must know whether the sensors are accurate, whether the record is continuous, and whether the reasoning behind each decision can be explained.",
+      "duration": 10,
+      "cue": "04_TRUST",
+      "index": 43,
+      "paragraphs": [
+        "Numbers alone do not earn trust. We must know whether the sensors are accurate, whether the record is continuous, and whether the reasoning behind each decision can be explained."
+      ]
+    },
+    {
+      "id": "j4-04",
+      "kind": "split",
+      "section": "JOURNEY 4",
+      "body": "That is why we considered it more important to record where the data came from and how it was used than simply to collect more of it.",
+      "duration": 10,
+      "cue": "04_TRUST",
+      "index": 45,
+      "paragraphs": [
+        "That is why we considered it more important to record where the data came from and how it was used than simply to collect more of it."
+      ],
+      "image": "assets/rc8_5/j4-04.jpg",
+      "imageSide": "right",
+      "layout": "doc56"
+    },
+    {
+      "id": "j4-close",
+      "kind": "closing",
+      "section": "JOURNEY 4 · CLOSING",
+      "eyebrow": "JOURNEY 4 · CLOSING",
+      "body": "Data does not become an asset simply because it has been stored. It earns trust only when it can be checked again, clearly explained, and used responsibly.",
+      "duration": 12,
+      "cue": "04_TRUST",
+      "index": 50,
+      "paragraphs": [
+        "Data does not become an asset simply because it has been stored. It earns trust only when it can be checked again, clearly explained, and used responsibly."
+      ]
+    },
+    {
+      "id": "j5-open",
+      "kind": "opener",
+      "section": "JOURNEY 5",
+      "eyebrow": "JOURNEY 5",
+      "title": "We Didn't Build AI First. We Built an Operating System.",
+      "subtitle": "",
+      "duration": 6,
+      "cue": "04_TRUST",
+      "index": 51
+    },
+    {
+      "id": "j5-01",
+      "kind": "split",
+      "section": "JOURNEY 5",
+      "body": "AI is compelling. But a farm does not run on AI alone.",
+      "image": "assets/p044.jpg",
+      "imageSide": "right",
+      "duration": 9,
+      "cue": "04_TRUST",
+      "index": 52,
+      "paragraphs": [
+        "AI is compelling. But a farm does not run on AI alone."
+      ]
+    },
+    {
+      "id": "j5-02",
+      "kind": "statement",
+      "section": "JOURNEY 5",
+      "body": "Sensors transmit data. Controllers carry out commands. Equipment responds. People confirm the result.",
+      "duration": 10,
+      "cue": "04_TRUST",
+      "index": 53,
+      "paragraphs": [
+        "Sensors transmit data. Controllers carry out commands. Equipment responds. People confirm the result."
+      ]
+    },
+    {
+      "id": "j5-04",
+      "kind": "statement",
+      "section": "JOURNEY 5",
+      "body": "That is why we designed the structure of operation before we designed an AI model.",
+      "duration": 9,
+      "cue": "04_TRUST",
+      "index": 55,
+      "paragraphs": [
+        "That is why we designed the structure of operation before we designed an AI model."
+      ]
+    },
+    {
+      "id": "j5-05",
+      "kind": "statement",
+      "section": "JOURNEY 5",
+      "body": "Who has the authority to make which decision? Where is a command executed? Which functions must continue to operate when communication is lost? When risk appears, which rule takes priority?",
+      "duration": 10,
+      "cue": "04_TRUST",
+      "index": 56,
+      "paragraphs": [
+        "Who has the authority to make which decision? Where is a command executed? Which functions must continue to operate when communication is lost? When risk appears, which rule takes priority?"
+      ]
+    },
+    {
+      "id": "j5-06",
+      "kind": "split",
+      "section": "JOURNEY 5",
+      "body": "FarmTOS-ON is not a single screen. It is an operating system that connects field control, records, analysis, safety, human approval, and accountability in one continuous flow.",
+      "duration": 9,
+      "cue": "04_TRUST",
+      "index": 57,
+      "paragraphs": [
+        "FarmTOS-ON is not a single screen. It is an operating system that connects field control, records, analysis, safety, human approval, and accountability in one continuous flow."
+      ],
+      "image": "assets/documentary_rc8/j5-06.jpg",
+      "imageSide": "left",
+      "layout": "doc52"
+    },
+    {
+      "id": "j5-07",
+      "kind": "statement",
+      "section": "JOURNEY 5",
+      "body": "Within that operating system, AI calculates possibilities and offers recommendations. But every action must first pass through the farm’s safety rules and its established authority.",
+      "duration": 10,
+      "cue": "04_TRUST",
+      "index": 58,
+      "paragraphs": [
+        "Within that operating system, AI calculates possibilities and offers recommendations. But every action must first pass through the farm’s safety rules and its established authority."
+      ]
+    },
+    {
+      "id": "j6-open",
+      "kind": "opener",
+      "section": "JOURNEY 6",
+      "eyebrow": "JOURNEY 6",
+      "title": "We Don't Automate. We Design Safety.",
+      "subtitle": "",
+      "duration": 6,
+      "cue": "05_SAFETY",
+      "index": 61
+    },
+    {
+      "id": "j6-01",
+      "kind": "split",
+      "section": "JOURNEY 6",
+      "body": "Automation reduces the work people must do. But poorly designed automation can amplify risk faster than a person can respond.",
+      "image": "assets/p038.jpg",
+      "imageSide": "left",
+      "duration": 9,
+      "cue": "05_SAFETY",
+      "index": 62,
+      "paragraphs": [
+        "Automation reduces the work people must do. But poorly designed automation can amplify risk faster than a person can respond."
+      ]
+    },
+    {
+      "id": "j6-03",
+      "kind": "split",
+      "section": "JOURNEY 6",
+      "body": "That is why, before asking whether something can operate, we ask whether it should be allowed to operate.",
+      "image": "assets/p052.jpg",
+      "imageSide": "left",
+      "duration": 9,
+      "cue": "05_SAFETY",
+      "index": 64,
+      "paragraphs": [
+        "That is why, before asking whether something can operate, we ask whether it should be allowed to operate."
+      ]
+    },
+    {
+      "id": "j6-04",
+      "kind": "statement",
+      "section": "JOURNEY 6",
+      "body": "Is it raining? Is the wind too strong? Are the sensors functioning normally? Will this action conflict with another piece of equipment? Does the person or system issuing the command have the authority to do so?",
+      "duration": 11,
+      "cue": "05_SAFETY",
+      "index": 65,
+      "paragraphs": [
+        "Is it raining? Is the wind too strong? Are the sensors functioning normally? Will this action conflict with another piece of equipment? Does the person or system issuing the command have the authority to do so?"
+      ]
+    },
+    {
+      "id": "j6-06",
+      "kind": "split",
+      "section": "JOURNEY 6",
+      "body": "When conditions are dangerous, safety rules come before an AI recommendation. Manual control comes before automation, and protecting life and equipment comes before efficiency.",
+      "image": "assets/p054.jpg",
+      "imageSide": "right",
+      "duration": 9,
+      "cue": "05_SAFETY",
+      "index": 67,
+      "paragraphs": [
+        "When conditions are dangerous, safety rules come before an AI recommendation. Manual control comes before automation, and protecting life and equipment comes before efficiency."
+      ]
+    },
+    {
+      "id": "j6-close",
+      "kind": "closing",
+      "section": "JOURNEY 6 · CLOSING",
+      "eyebrow": "JOURNEY 6 · CLOSING",
+      "body": "Automation is not complete when people disappear. It is complete when the system behaves responsibly enough for people to feel at ease.",
+      "duration": 12,
+      "cue": "05_SAFETY",
+      "index": 70,
+      "paragraphs": [
+        "Automation is not complete when people disappear. It is complete when the system behaves responsibly enough for people to feel at ease."
+      ]
+    },
+    {
+      "id": "j7-open",
+      "kind": "opener",
+      "section": "JOURNEY 7",
+      "eyebrow": "JOURNEY 7",
+      "title": "We Don't Control Farms. We Preserve Balance",
+      "subtitle": "",
+      "duration": 6,
+      "cue": "06_BALANCE",
+      "index": 71
+    },
+    {
+      "id": "j7-01",
+      "kind": "split",
+      "section": "JOURNEY 7",
+      "body": "A farm does not operate by a single number.",
+      "image": "assets/hanging-bed-structure.jpg",
+      "imageSide": "right",
+      "duration": 9,
+      "cue": "06_BALANCE",
+      "index": 72,
+      "paragraphs": [
+        "A farm does not operate by a single number."
+      ]
+    },
+    {
+      "id": "j7-02",
+      "kind": "statement",
+      "section": "JOURNEY 7",
+      "body": "When temperature falls, humidity changes. When a vent opens, airflow and carbon dioxide shift. When irrigation begins, roots and the surrounding environment respond together.",
+      "duration": 10,
+      "cue": "06_BALANCE",
+      "index": 73,
+      "paragraphs": [
+        "When temperature falls, humidity changes. When a vent opens, airflow and carbon dioxide shift. When irrigation begins, roots and the surrounding environment respond together."
+      ]
+    },
+    {
+      "id": "j7-04",
+      "kind": "split",
+      "section": "JOURNEY 7",
+      "body": "Temperature and humidity. VPD and condensation. Light and transpiration. Root-zone moisture and nutrients. Energy and crop growth. Good control does not force every value toward a target. It protects the range in which crops can recover and grow on their own.",
+      "image": "assets/hanging-bed-strawberry.jpg",
+      "imageSide": "left",
+      "duration": 13,
+      "cue": "06_BALANCE",
+      "index": 75,
+      "paragraphs": [
+        "Temperature and humidity. VPD and condensation. Light and transpiration. Root-zone moisture and nutrients. Energy and crop growth. Good control does not force every value toward a target. It protects the range in which crops can recover and grow on their own."
+      ]
+    },
+    {
+      "id": "j7-06",
+      "kind": "statement",
+      "section": "JOURNEY 7",
+      "body": "We want to build technology that helps a farm hold its balance through change—not technology that tries to dominate it.",
+      "duration": 10,
+      "cue": "06_BALANCE",
+      "index": 77,
+      "paragraphs": [
+        "We want to build technology that helps a farm hold its balance through change—not technology that tries to dominate it."
+      ]
+    },
+    {
+      "id": "j8-open",
+      "kind": "opener",
+      "section": "JOURNEY 8",
+      "eyebrow": "JOURNEY 8",
+      "title": "AI Is Not the Final Decision-Maker",
+      "subtitle": "",
+      "duration": 6,
+      "cue": "06_BALANCE",
+      "index": 79
+    },
+    {
+      "id": "j8-01",
+      "kind": "split",
+      "section": "JOURNEY 8",
+      "body": "AI can discover patterns that people may easily miss. It can compare vast amounts of data, warn of risk early, and recommend possible choices.",
+      "image": "assets/p047.jpg",
+      "imageSide": "left",
+      "duration": 9,
+      "cue": "06_BALANCE",
+      "index": 80,
+      "paragraphs": [
+        "AI can discover patterns that people may easily miss. It can compare vast amounts of data, warn of risk early, and recommend possible choices."
+      ]
+    },
+    {
+      "id": "j8-02",
+      "kind": "split",
+      "section": "JOURNEY 8",
+      "body": "But AI cannot know every context of a farm on its own. Today’s work plan, the actual condition of equipment, a slight change sensed in the crop, and circumstances known only to the people in the field may never appear fully in the data.",
+      "image": "assets/p068.jpg",
+      "imageSide": "right",
+      "duration": 13,
+      "cue": "06_BALANCE",
+      "index": 81,
+      "paragraphs": [
+        "But AI cannot know every context of a farm on its own. Today’s work plan, the actual condition of equipment, a slight change sensed in the crop, and circumstances known only to the people in the field may never appear fully in the data."
+      ]
+    },
+    {
+      "id": "j8-03",
+      "kind": "statement",
+      "section": "JOURNEY 8",
+      "body": "That is why we believe AI judgments must be explainable. What did it observe? Why did it recommend this action? What risk did it anticipate? Can a person reject or revise the recommendation?",
+      "duration": 10,
+      "cue": "06_BALANCE",
+      "index": 82,
+      "paragraphs": [
+        "That is why we believe AI judgments must be explainable. What did it observe? Why did it recommend this action? What risk did it anticipate? Can a person reject or revise the recommendation?"
+      ]
+    },
+    {
+      "id": "j8-04",
+      "kind": "statement",
+      "section": "JOURNEY 8",
+      "body": "In FarmTOS-ON, AI recommends, people review, and safety rules verify whether an action can be executed.",
+      "duration": 10,
+      "cue": "06_BALANCE",
+      "index": 83,
+      "paragraphs": [
+        "In FarmTOS-ON, AI recommends, people review, and safety rules verify whether an action can be executed."
+      ]
+    },
+    {
+      "id": "j8-close",
+      "kind": "closing",
+      "section": "JOURNEY 8 · CLOSING",
+      "eyebrow": "JOURNEY 8 · CLOSING",
+      "body": "Progress does not mean allowing AI to decide more. It means enabling people and AI to make better decisions together.",
+      "duration": 12,
+      "cue": "06_BALANCE",
+      "index": 86,
+      "paragraphs": [
+        "Progress does not mean allowing AI to decide more. It means enabling people and AI to make better decisions together."
+      ]
+    },
+    {
+      "id": "proof-real-environments",
+      "kind": "split",
+      "section": "PROVEN IN THE FIELD",
+      "eyebrow": "PROVEN IN THE FIELD",
+      "title": "Built in Real Agricultural Environments",
+      "body": "The ideas in this book matter only when they can be traced to real work in real agricultural environments.\n\nFarmTOS and related control technologies have been developed and tested in real agricultural environments, not only under laboratory conditions—across greenhouses, controlled-environment facilities, container and vertical farms, research sites, and open fields.",
+      "duration": 17,
+      "cue": "06_BALANCE",
+      "index": 86.1,
+      "evergreenScene": true,
+      "paragraphs": [
+        "The ideas in this book matter only when they can be traced to real work in real agricultural environments.",
+        "FarmTOS and related control technologies have been developed and tested in real agricultural environments, not only under laboratory conditions—across greenhouses, controlled-environment facilities, container and vertical farms, research sites, and open fields."
+      ],
+      "image": "assets/documentary_rc8/proof-real-environments.jpg",
+      "imageSide": "left",
+      "languageQA": {
+        "rc5Editorial": "Evergreen inserted-scene English copy tightened for natural screen reading."
+      },
+      "timingQA": {
+        "rc5": {
+          "previousDuration": 13,
+          "newDuration": 17,
+          "reason": "Inserted-scene dwell time normalized against existing language-runtime text density."
+        }
+      },
+      "layout": "doc52"
+    },
+    {
+      "id": "proof-test-adjust",
+      "kind": "split",
+      "section": "PROVEN IN THE FIELD",
+      "eyebrow": "PROVEN IN THE FIELD",
+      "title": "Operated, Tested, Adjusted",
+      "body": "Sensors, control equipment, and greenhouse systems have to be checked, adjusted, and understood under real operating conditions.\n\nInstallation is not the end of the story.",
+      "duration": 11,
+      "cue": "06_BALANCE",
+      "index": 86.2,
+      "evergreenScene": true,
+      "paragraphs": [
+        "Sensors, control equipment, and greenhouse systems have to be checked, adjusted, and understood under real operating conditions.",
+        "Installation is not the end of the story."
+      ],
+      "image": "assets/documentary_rc8/proof-test-adjust.jpg",
+      "imageSide": "right",
+      "languageQA": {
+        "rc5Editorial": "Evergreen inserted-scene English copy tightened for natural screen reading."
+      },
+      "timingQA": {
+        "rc5": {
+          "previousDuration": 10,
+          "newDuration": 11,
+          "reason": "Inserted-scene dwell time normalized against existing language-runtime text density."
+        }
+      },
+      "layout": "doc52"
+    },
+    {
+      "id": "proof-across-borders",
+      "kind": "split",
+      "section": "PROVEN IN THE FIELD",
+      "eyebrow": "INTERNATIONAL EXPERIENCE",
+      "title": "Uzbekistan Field Experience",
+      "body": "From July 2024 to November 2025, DK EcoFarm's Uzbekistan project covered three AKIS smart-farm sites in Fergana, Bukhara, and Khorezm (Urgench). The work included smart-greenhouse structures, control systems, and local technical training.\n\nTechnology matters when local teams can understand it, operate it, and carry it forward.",
+      "duration": 15,
+      "cue": "06_BALANCE",
+      "index": 86.3,
+      "evergreenScene": true,
+      "paragraphs": [
+        "From July 2024 to November 2025, DK EcoFarm's Uzbekistan project covered three AKIS smart-farm sites in Fergana, Bukhara, and Khorezm (Urgench). The work included smart-greenhouse structures, control systems, and local technical training.",
+        "Technology matters when local teams can understand it, operate it, and carry it forward."
+      ],
+      "image": "assets/documentary_rc8/proof-across-borders-exterior-uzbekistan.jpg",
+      "imageSide": "left",
+      "languageQA": {
+        "rc5Editorial": "Evergreen inserted-scene English copy tightened for natural screen reading."
+      },
+      "timingQA": {
+        "rc5": {
+          "previousDuration": 14,
+          "newDuration": 14,
+          "reason": "Inserted-scene dwell time normalized against existing language-runtime text density."
+        },
+        "rc51": "Adjusted from 14s to 15s so inserted-scene reading density stays within the established EN runtime range."
+      },
+      "layout": "doc52"
+    },
+    {
+      "id": "j9-open",
+      "kind": "opener",
+      "section": "JOURNEY 9",
+      "eyebrow": "JOURNEY 9",
+      "title": "A Good Farm Gives People Room to Breathe",
+      "subtitle": "",
+      "duration": 6,
+      "cue": "07_LIFE",
+      "index": 87
+    },
+    {
+      "id": "j9-01",
+      "kind": "split",
+      "section": "JOURNEY 9",
+      "body": "Smart agriculture began with a simple purpose: to reduce the burden of farm work. But as technology multiplied, so did the screens and alarms that demanded attention, along with the settings and responses people were expected to remember. Technology created to help people sometimes ended up keeping them beside the system all day.",
+      "image": "assets/p072.jpg",
+      "imageSide": "right",
+      "duration": 16,
+      "cue": "07_LIFE",
+      "index": 88,
+      "paragraphs": [
+        "Smart agriculture began with a simple purpose: to reduce the burden of farm work. But as technology multiplied, so did the screens and alarms that demanded attention, along with the settings and responses people were expected to remember. Technology created to help people sometimes ended up keeping them beside the system all day."
+      ]
+    },
+    {
+      "id": "j9-02",
+      "kind": "statement",
+      "section": "JOURNEY 9",
+      "body": "A good farm should be able to maintain its essential operations and safety even when a person steps away for a while.",
+      "duration": 10,
+      "cue": "07_LIFE",
+      "index": 89,
+      "paragraphs": [
+        "A good farm should be able to maintain its essential operations and safety even when a person steps away for a while."
+      ]
+    },
+    {
+      "id": "j9-04",
+      "kind": "split",
+      "section": "JOURNEY 9",
+      "body": "What technology should give back is time. Time with family. Time to observe crops more closely. Time to learn something new, and time to prepare for the next season.",
+      "image": "assets/evergreen_v2/j9-04-family-final.jpg",
+      "imageSide": "left",
+      "duration": 9,
+      "cue": "07_LIFE",
+      "index": 91,
+      "paragraphs": [
+        "What technology should give back is time. Time with family. Time to observe crops more closely. Time to learn something new, and time to prepare for the next season."
+      ],
+      "layout": "family65"
+    },
+    {
+      "id": "j10-open",
+      "kind": "opener",
+      "section": "JOURNEY 10",
+      "eyebrow": "JOURNEY 10",
+      "title": "A Name for the Farm We Hope to Preserve",
+      "subtitle": "",
+      "duration": 6,
+      "cue": "08_NAME",
+      "index": 96
+    },
+    {
+      "id": "j10-01",
+      "kind": "split",
+      "section": "JOURNEY 10",
+      "body": "The name FarmTOS did not come easily. We did not want a name that merely suggested adding technology to a farm. We wanted the name itself to carry our standard for the kind of farm we hoped to build and preserve.",
+      "image": "assets/p018.jpg",
+      "imageSide": "left",
+      "duration": 13,
+      "cue": "08_NAME",
+      "index": 97,
+      "paragraphs": [
+        "The name FarmTOS did not come easily. We did not want a name that merely suggested adding technology to a farm. We wanted the name itself to carry our standard for the kind of farm we hoped to build and preserve."
+      ]
+    },
+    {
+      "id": "j10-02",
+      "kind": "statement",
+      "section": "JOURNEY 10",
+      "body": "The first word that stayed with us was the ancient Greek word kalos. Kalos can mean beautiful. But the beauty it describes is not confined to outward appearance. It also speaks of what is good, excellent, noble, morally right, and worthy of respect.",
+      "duration": 13,
+      "cue": "08_NAME",
+      "index": 98,
+      "paragraphs": [
+        "The first word that stayed with us was the ancient Greek word kalos. Kalos can mean beautiful. But the beauty it describes is not confined to outward appearance. It also speaks of what is good, excellent, noble, morally right, and worthy of respect."
+      ]
+    },
+    {
+      "id": "j10-04",
+      "kind": "split",
+      "section": "JOURNEY 10",
+      "body": "There was another word: Kalathos. In ancient Greece, a kalathos was a basket used to hold wool and flowers, grain and fruit—a vessel that gathered the harvest and carried its fruits forward. It came to symbolize abundance and fertility.",
+      "image": "assets/p081.jpg",
+      "imageSide": "right",
+      "duration": 12,
+      "cue": "08_NAME",
+      "index": 100,
+      "paragraphs": [
+        "There was another word: Kalathos. In ancient Greece, a kalathos was a basket used to hold wool and flowers, grain and fruit—a vessel that gathered the harvest and carried its fruits forward. It came to symbolize abundance and fertility."
+      ]
+    },
+    {
+      "id": "j10-05",
+      "kind": "text",
+      "section": "JOURNEY 10",
+      "body": "Between those two words, we began to see the farm we hoped for. Kalos: a farm that is beautiful, good, excellent, and right. Kalathos: a farm that holds life, bears fruit, and allows abundance to continue. One expressed the values a farm should uphold. The other expressed the fruits a farm should create.",
+      "duration": 16,
+      "cue": "08_NAME",
+      "index": 101,
+      "paragraphs": [
+        "Between those two words, we began to see the farm we hoped for. Kalos: a farm that is beautiful, good, excellent, and right. Kalathos: a farm that holds life, bears fruit, and allows abundance to continue. One expressed the values a farm should uphold. The other expressed the fruits a farm should create."
+      ]
+    },
+    {
+      "id": "j10-06",
+      "kind": "statement",
+      "section": "JOURNEY 10",
+      "body": "We connected those meanings with the word Farm. But meaning alone was not enough. We also had to consider how the name would be written, spoken, and remembered. For a long time, we considered both THOS and TOS. In the end, we wanted something short, clear, and easy for anyone to say while still carrying both meanings. So we chose TOS.",
+      "duration": 18,
+      "cue": "08_NAME",
+      "index": 102,
+      "paragraphs": [
+        "We connected those meanings with the word Farm. But meaning alone was not enough. We also had to consider how the name would be written, spoken, and remembered. For a long time, we considered both THOS and TOS. In the end, we wanted something short, clear, and easy for anyone to say while still carrying both meanings. So we chose TOS."
+      ]
+    },
+    {
+      "id": "j10-09",
+      "kind": "text",
+      "section": "JOURNEY 10",
+      "body": "Then we added ON. It means switched on, active, and continuing. In FarmTOS-ON, however, ON means more than the power state of a machine. It speaks of farm operations continuing, human experience being carried forward, technology continuing to learn, and the fruits of one generation becoming the beginning of the next.",
+      "duration": 15,
+      "cue": "08_NAME",
+      "index": 104,
+      "paragraphs": [
+        "Then we added ON. It means switched on, active, and continuing. In FarmTOS-ON, however, ON means more than the power state of a machine. It speaks of farm operations continuing, human experience being carried forward, technology continuing to learn, and the fruits of one generation becoming the beginning of the next."
+      ]
+    },
+    {
+      "id": "j10-10",
+      "kind": "text",
+      "section": "JOURNEY 10",
+      "body": "FarmTOS-ON is a promise before it is a product name. It is a vision of a farm where people and technology coexist, where food is produced with responsibility, where life and harvest can flourish, and where abundance does not end after a single season. The technology we build exists to turn that promise into reality.",
+      "duration": 16,
+      "cue": "08_NAME",
+      "index": 105,
+      "paragraphs": [
+        "FarmTOS-ON is a promise before it is a product name. It is a vision of a farm where people and technology coexist, where food is produced with responsibility, where life and harvest can flourish, and where abundance does not end after a single season. The technology we build exists to turn that promise into reality."
+      ]
+    },
+    {
+      "id": "j11-open",
+      "kind": "opener",
+      "section": "JOURNEY 11",
+      "eyebrow": "JOURNEY 11",
+      "title": "We Never Call It Finished",
+      "subtitle": "",
+      "duration": 6,
+      "cue": "09_LEARN",
+      "index": 107
+    },
+    {
+      "id": "j11-01",
+      "kind": "split",
+      "section": "JOURNEY 11",
+      "body": "In technology, we use the language of completion all the time. Development complete. Installation complete. Inspection complete. Project complete. But in agriculture, we have always been careful with the word finished. A farm never remains the same for long.",
+      "image": "assets/p092.jpg",
+      "imageSide": "right",
+      "duration": 12,
+      "cue": "09_LEARN",
+      "index": 108,
+      "paragraphs": [
+        "In technology, we use the language of completion all the time. Development complete. Installation complete. Inspection complete. Project complete. But in agriculture, we have always been careful with the word finished. A farm never remains the same for long."
+      ]
+    },
+    {
+      "id": "j11-02",
+      "kind": "statement",
+      "section": "JOURNEY 11",
+      "body": "Yesterday’s answer is not guaranteed to remain the answer today. Even in the same greenhouse, seasons change, crops grow, weather shifts, and human judgment evolves. Agriculture is not the repetition of fixed conditions. It is the work of moving with life as it continually changes.",
+      "duration": 14,
+      "cue": "09_LEARN",
+      "index": 109,
+      "paragraphs": [
+        "Yesterday’s answer is not guaranteed to remain the answer today. Even in the same greenhouse, seasons change, crops grow, weather shifts, and human judgment evolves. Agriculture is not the repetition of fixed conditions. It is the work of moving with life as it continually changes."
+      ]
+    },
+    {
+      "id": "j11-03",
+      "kind": "statement",
+      "section": "JOURNEY 11",
+      "body": "That is why we do not believe that one technology, once built, can explain every farm. One good algorithm. One sophisticated model. One successful cultivation case. None of these can define every condition agriculture will encounter. Technology can never be finished ahead of the field.",
+      "duration": 14,
+      "cue": "09_LEARN",
+      "index": 110,
+      "paragraphs": [
+        "That is why we do not believe that one technology, once built, can explain every farm. One good algorithm. One sophisticated model. One successful cultivation case. None of these can define every condition agriculture will encounter. Technology can never be finished ahead of the field."
+      ]
+    },
+    {
+      "id": "j11-07",
+      "kind": "statement",
+      "section": "JOURNEY 11",
+      "body": "We do not want AI to behave as though it knows everything from the beginning. AI can observe the field, calculate possibilities, and identify risk early. But its judgment must remain open to review, explanation, and correction through feedback from people and the field.",
+      "duration": 13,
+      "cue": "09_LEARN",
+      "index": 114,
+      "paragraphs": [
+        "We do not want AI to behave as though it knows everything from the beginning. AI can observe the field, calculate possibilities, and identify risk early. But its judgment must remain open to review, explanation, and correction through feedback from people and the field."
+      ]
+    },
+    {
+      "id": "j11-close",
+      "kind": "closing",
+      "section": "JOURNEY 11 · CLOSING",
+      "eyebrow": "JOURNEY 11 · CLOSING",
+      "body": "We do not claim to be building a finished form of agriculture. Agriculture cannot be completed by one person or within one generation. We can only observe more deeply, record more honestly, revise more humbly, and return a slightly better answer to the field than the one we had yesterday. FarmTOS-ON is not the name of a finished system. It is the name of a promise to keep learning, growing, and moving forward.",
+      "duration": 21,
+      "cue": "09_LEARN",
+      "index": 118,
+      "paragraphs": [
+        "We do not claim to be building a finished form of agriculture. Agriculture cannot be completed by one person or within one generation. We can only observe more deeply, record more honestly, revise more humbly, and return a slightly better answer to the field than the one we had yesterday. FarmTOS-ON is not the name of a finished system. It is the name of a promise to keep learning, growing, and moving forward."
+      ]
+    },
+    {
+      "id": "j12-open",
+      "kind": "opener",
+      "section": "JOURNEY 12",
+      "eyebrow": "JOURNEY 12",
+      "title": "We Are Not Building the Future. We Are Passing Hope to the Next Generation",
+      "subtitle": "",
+      "duration": 6,
+      "cue": "10_HOPE",
+      "index": 119
+    },
+    {
+      "id": "j12-01",
+      "kind": "statement",
+      "section": "JOURNEY 12",
+      "body": "We are often told that we are building the future of agriculture. But we have come to see the future differently. It is not something one person creates all at once. It takes shape as the choices we make today continue, one by one.",
+      "duration": 13,
+      "cue": "10_HOPE",
+      "index": 120,
+      "paragraphs": [
+        "We are often told that we are building the future of agriculture. But we have come to see the future differently. It is not something one person creates all at once. It takes shape as the choices we make today continue, one by one."
+      ]
+    },
+    {
+      "id": "j12-03",
+      "kind": "split",
+      "section": "JOURNEY 12",
+      "body": "We believe technology should be carried forward in the same way. Good technology should not remain only as the property of a single company. It should become the experience of growers, the knowledge of operators, and the ground from which the next generation can begin with greater understanding.",
+      "image": "assets/rc8_2/j12-03.jpg",
+      "imageSide": "left",
+      "duration": 15,
+      "cue": "10_HOPE",
+      "index": 122,
+      "paragraphs": [
+        "We believe technology should be carried forward in the same way. Good technology should not remain only as the property of a single company. It should become the experience of growers, the knowledge of operators, and the ground from which the next generation can begin with greater understanding."
+      ],
+      "layout": "doc56"
+    },
+    {
+      "id": "j12-05",
+      "kind": "split",
+      "section": "JOURNEY 12",
+      "body": "We build AI for the same reason. Not to replace people, but to keep human experience from disappearing. We hope that thirty years of knowledge will not vanish when one person retires, but become the first lesson available to the person who comes next.",
+      "image": "assets/rc8_2/j12-05.jpg",
+      "imageSide": "left",
+      "duration": 13,
+      "cue": "10_HOPE",
+      "index": 124,
+      "paragraphs": [
+        "We build AI for the same reason. Not to replace people, but to keep human experience from disappearing. We hope that thirty years of knowledge will not vanish when one person retires, but become the first lesson available to the person who comes next."
+      ],
+      "layout": "doc56"
+    },
+    {
+      "id": "j12-06",
+      "kind": "statement",
+      "section": "JOURNEY 12",
+      "body": "Good agriculture is not about defeating nature. It begins with the humility to understand it. Good technology does not place itself ahead of people. It stays beside them for as long as it is needed.",
+      "duration": 11,
+      "cue": "10_HOPE",
+      "index": 125,
+      "paragraphs": [
+        "Good agriculture is not about defeating nature. It begins with the humility to understand it. Good technology does not place itself ahead of people. It stays beside them for as long as it is needed."
+      ]
+    },
+    {
+      "id": "j12-11",
+      "kind": "statement",
+      "section": "JOURNEY 12",
+      "body": "We built technology, but technology is not all we hope to leave behind. We built a system, but we do not want to be remembered only for that system. If there is one thing we hope people will say, it is this: “They genuinely loved agriculture.” And that love became technology.",
+      "duration": 15,
+      "cue": "10_HOPE",
+      "index": 130,
+      "paragraphs": [
+        "We built technology, but technology is not all we hope to leave behind. We built a system, but we do not want to be remembered only for that system. If there is one thing we hope people will say, it is this: “They genuinely loved agriculture.” And that love became technology."
+      ]
+    },
+    {
+      "id": "j12-hero-hope",
+      "kind": "hero",
+      "section": "JOURNEY 12",
+      "image": "assets/evergreen_v2/j12-hero-hope.jpg",
+      "duration": 12,
+      "cue": "10_HOPE",
+      "index": 131
+    },
+    {
+      "id": "j12-close",
+      "kind": "closing",
+      "section": "JOURNEY 12 · CLOSING",
+      "eyebrow": "JOURNEY 12 · CLOSING",
+      "body": "Even today, somewhere, someone is planting a seed. Somewhere else, someone is opening the vents of a greenhouse, studying the leaves, and preparing for tomorrow’s harvest. We build technology so that those moments can become a little safer, a little more abundant, and continue a little longer.",
+      "duration": 14,
+      "cue": "10_HOPE",
+      "index": 132,
+      "paragraphs": [
+        "Even today, somewhere, someone is planting a seed. Somewhere else, someone is opening the vents of a greenhouse, studying the leaves, and preparing for tomorrow’s harvest. We build technology so that those moments can become a little safer, a little more abundant, and continue a little longer."
+      ]
+    },
+    {
+      "id": "final-resolution",
+      "kind": "resolution",
+      "section": "VOLUME 1 · CLOSING",
+      "body": "Technology is not the destination.\n\nIt is a bridge between people, nature, and the next generation.\n\nThat is why we are not building the future.\n\nWe are passing hope to the next generation.",
+      "subtitle": "The journey continues.",
+      "duration": 12,
+      "cue": "10_HOPE",
+      "index": 133,
+      "paragraphs": [
+        "Technology is not the destination.",
+        "It is a bridge between people, nature, and the next generation.",
+        "That is why we are not building the future.",
+        "We are passing hope to the next generation."
+      ],
+      "signoff": "The Editorial Team",
+      "signature": "DK EcoFARM",
+      "endingQA": {
+        "journeyLineOccursOnce": true,
+        "journeyLineLocation": "subtitle only",
+        "handwritingSignoff": "The Editorial Team",
+        "signature": "DK EcoFARM",
+        "editorialIntent": "Open ending with visual breathing room and a human editorial sign-off."
+      }
+    }
+  ],
+  "tracks": {},
+  "crossfadeSeconds": 8,
+  "release": {
+    "status": "EXHIBITION DERIVATIVE v1.1",
+    "authorApprovedCleanMaster": "ROOTED_Vol1_KR_Author_Approved_Clean_Master.docx",
+    "sceneCount": 111,
+    "imageAssets": 44,
+    "audioCues": 10,
+    "authorText": "LOCKED",
+    "authorManualLineBreaks": "LOCKED / preserved",
+    "koreanTypesetting": "word-level wrap hard-lock",
+    "keywordOverlay": "REMOVED",
+    "format": "Landscape Responsive HTML5",
+    "finalSequence": "J12 Hero → J12 Closing → Final Resolution → Silence",
+    "authorCopyRestoration": "All text-bearing scenes re-extracted from DOCX including table-cell paragraphs",
+    "imageTextSceneRestorationCount": 42,
+    "renderFix": "Explicit flex image+copy panels + reliable two-layer crossfade",
+    "imageTextScenes": 42,
+    "imageTextVisibilityGate": "PASS",
+    "launcherFix": "Fresh random localhost port on every launch; old fixed-port server cannot shadow new package",
+    "cacheIsolation": "Fresh origin + build query + no-cache meta",
+    "buildMarker": "v2.3.6 visible at bottom-right",
+    "imageTextScenesWithBody": 42,
+    "sourceRelease": "2.3.6 FRESH_PORT_RENDER_FINAL"
+  },
+  "exhibition": {
+    "sourceVersion": "2.3.6 FRESH_PORT_RENDER_FINAL",
+    "filterMode": "scene-id-only",
+    "contextCorrection": "Korean editorial continuity pass",
+    "restoredFromV1_0": [
+      "j0-01",
+      "j1-03",
+      "j10-06",
+      "j10-09",
+      "j11-03",
+      "j12-01",
+      "j12-03",
+      "j5-05",
+      "j8-04",
+      "j9-02"
+    ],
+    "excludedSceneCount": 23,
+    "excludedSceneIds": [
+      "j0-03",
+      "j1-05",
+      "j10-03",
+      "j11-04",
+      "j11-05",
+      "j11-08",
+      "j11-09",
+      "j11-10",
+      "j12-02",
+      "j12-04",
+      "j12-08",
+      "j12-09",
+      "j4-05",
+      "j4-07",
+      "j4-08",
+      "j5-08",
+      "j6-05",
+      "j6-08",
+      "j7-03",
+      "j7-05",
+      "j8-05",
+      "j9-03",
+      "j9-06"
+    ],
+    "retainedSceneCount": 111,
+    "journey2": "FULL_KEEP",
+    "journey3": "FULL_KEEP",
+    "autoLoop": true,
+    "loopHoldMs": 2500,
+    "contentRewrite": false,
+    "visualRedesign": false
+  },
+  "exhibitionShort": {
+    "basedOn": "KR LANDSCAPE EXHIBITION v1.1 / 111 scenes",
+    "purpose": "World Bank exhibition continuous booth playback",
+    "filterMode": "scene-id-only",
+    "removedFromV1_1": [
+      "prologue-2",
+      "part-1",
+      "j1-close",
+      "part-ii",
+      "part-iii",
+      "j4-03",
+      "j4-06",
+      "j5-03",
+      "j5-close",
+      "j6-02",
+      "j6-07",
+      "j7-close",
+      "j8-06",
+      "j9-05",
+      "j9-close",
+      "part-iv",
+      "j10-08",
+      "j10-close",
+      "j11-06",
+      "j12-07",
+      "j12-10",
+      "final-silence"
+    ],
+    "removedSceneCount": 22,
+    "retainedSceneCount": 89,
+    "sourceRuntimeSec": 1042,
+    "shortRuntimeSec": 837,
+    "runtimeReductionSec": 205,
+    "runtimeReductionPct": 19.7,
+    "journey2": "FULL_KEEP",
+    "journey3": "FULL_KEEP",
+    "contentRewrite": false,
+    "visualRedesign": false,
+    "assetReplacement": false,
+    "autoLoopInherited": true,
+    "loopHoldMs": 2500,
+    "editorialBalanceRestore": [
+      "j12-06",
+      "j5-02",
+      "j7-02"
+    ],
+    "audioClosingAdjustment": {
+      "applied": true,
+      "implementation": "internal player audio state patch",
+      "hopeFadeOutMs": 5500,
+      "silenceMs": 1750,
+      "rootsFadeInMs": 5500,
+      "audioFilesChanged": false,
+      "bgmCueStructureChanged": false,
+      "sceneTimingChanged": false,
+      "sceneSelectionChanged": false
+    },
+    "language": "en",
+    "englishMaster": "v2.1 FINAL",
+    "sceneSelectionMatchedToKR": "v1.2.2 / 89 scenes",
+    "legacySourceOnly": true
+  },
+  "language": "en",
+  "edition": "ROOTED_EN_LANDSCAPE_EXHIBITION_SHORT_v1.0",
+  "englishSourceMaster": "ROOTED_Vol1_English_Editorial_Typography_Master_v2.1_FINAL.docx",
+  "englishSourceSceneCount": 134,
+  "englishEditorialPrinciple": "Native-English v2.1 FINAL; 134-scene structure locked",
+  "englishReadability": {
+    "sourceEditorialMaster": "ROOTED_Vol1_English_Editorial_Typography_Master_v2.1_FINAL",
+    "textRewritten": false,
+    "sceneSelectionChanged": false,
+    "targetReadingRateWpm": 220,
+    "readingCushionSec": 1.0,
+    "adjustedSceneCount": 41,
+    "previousRuntimeSec": 837,
+    "previousRuntime": "13:57",
+    "newRuntimeSec": 991,
+    "newRuntime": "16:31",
+    "reason": "English native-reading timing calibration; Korean-authored scene timing was too fast for English copy."
+  },
+  "evergreen": {
+    "status": "V9_0_5_FINAL_AUDIO_EMBEDDED",
+    "purpose": "Reusable digital storybook for domestic/international exhibitions, pre-sales, and brand storytelling",
+    "basedOnRuntimeSceneCount": 89,
+    "sceneCount": 94,
+    "addedSceneIds": [
+      "bridge-who-we-are",
+      "bridge-what-we-build",
+      "proof-real-environments",
+      "proof-test-adjust",
+      "proof-across-borders"
+    ],
+    "insertAfter": {
+      "j3-close": [
+        "bridge-who-we-are",
+        "bridge-what-we-build"
+      ],
+      "j8-close": [
+        "proof-real-environments",
+        "proof-test-adjust",
+        "proof-across-borders"
+      ]
+    },
+    "visualAssetStatus": "SUPPLEMENT_APPLIED_LOW_RES_ORIGINALS_HIGH_RES_FINAL_PENDING",
+    "newSceneImageStatus": "TEXT_ONLY_PLACEHOLDER_IN_RC0",
+    "worldBankSpecificCoreContent": "EXCLUDED",
+    "finalJ12Sequence": "PRESERVED",
+    "russianNewSceneEditorialStatus": null,
+    "truthGateSceneIds": [
+      "j2-01",
+      "j2-05",
+      "j4-01",
+      "j5-06"
+    ],
+    "newSceneSourceRequiredIds": [
+      "bridge-who-we-are",
+      "bridge-what-we-build",
+      "proof-real-environments",
+      "proof-test-adjust",
+      "proof-across-borders"
+    ],
+    "imagePolicy": {
+      "factualScenes": "Verified documentary originals only; no generated replacements.",
+      "conceptualScenes": "May retain conceptual imagery subject to final resolution/rights review.",
+      "duplicatePolicy": "The same original photograph may be used only once in the digital storybook, including crops/derivatives."
+    },
+    "appliedSupplementScenes": [
+      "bridge-who-we-are",
+      "bridge-what-we-build",
+      "j2-01",
+      "j3-01",
+      "j4-04",
+      "j5-06",
+      "proof-real-environments",
+      "proof-test-adjust",
+      "proof-across-borders",
+      "j9-04"
+    ],
+    "remainingTextOnlyFactualScenes": [
+      "j2-05",
+      "j4-01"
+    ],
+    "excludedSupplementFiles": [
+      "그림16.jpg",
+      "그림17.jpg"
+    ],
+    "excludedReason": "Global-agricultural-dialogue event images are not part of the Evergreen core narrative.",
+    "rc3ReplacementSceneIds": [
+      "j2-04",
+      "proof-across-borders",
+      "j6-01",
+      "j8-01",
+      "j8-02",
+      "j10-01",
+      "j11-01",
+      "j12-03",
+      "j12-05"
+    ],
+    "sourceRequiredSceneIds": [
+      "j2-05",
+      "j4-01",
+      "j12-hero-hope"
+    ],
+    "finalHeroPolicy": "J12 Passing Hope remains source-required; previous family/sunset visual is not approved for FINAL.",
+    "duplicateOriginalPolicy": "One original photograph once across the storybook, including derivative crops.",
+    "j4_01": "Conceptual supporting visual accepted; documentary claim prohibited",
+    "j2_05": "Text-only LOCK",
+    "j11_01": "Current p092 retained after candidate comparison",
+    "remainingMandatoryVisual": "NONE",
+    "passingHope": "APPROVED_AND_APPLIED",
+    "remainingRecommendedSourceUpgrade": [
+      "High-resolution originals for currently retained low-resolution runtime/supplemental images",
+      "Optional actual DK sensor/control installation replacement for j4-01 if later available"
+    ],
+    "visualLockNote": "No further structural visual additions required before playback QA.",
+    "newSceneDwellTimes": {
+      "bridge-who-we-are": 16,
+      "bridge-what-we-build": 18,
+      "proof-real-environments": 17,
+      "proof-test-adjust": 11,
+      "proof-across-borders": 15
+    },
+    "runtimeDurationSecondsRC4": 1056.0,
+    "runtimeDurationSecondsRC5": 1067.0,
+    "closingAudioTransition": "5.5s HOPE fade-out -> 1.75s silence -> ROOTS restart with 5.5s crossfade",
+    "integratedPreviousNext": "RESTORED",
+    "narrationAssetStatus": "INTENTIONALLY_NOT_INCLUDED",
+    "runtimeDurationSecondsRC5_1": 1068.0,
+    "audioEdition": "BGM_ONLY",
+    "voiceLayerStatus": "EXCLUDED_BY_EDITORIAL_DECISION",
+    "voiceProduction": "DEFERRED_TO_SEPARATE_FUTURE_PROJECT",
+    "currentReleaseScope": "KR/EN/RU visual storybook + text + BGM + interactive/auto playback; no narration.",
+    "documentaryRemapSceneIds": [
+      "bridge-who-we-are",
+      "bridge-what-we-build",
+      "j2-01",
+      "j2-04",
+      "j4-01",
+      "j4-04",
+      "j5-06",
+      "proof-real-environments",
+      "proof-test-adjust",
+      "proof-across-borders",
+      "j12-03"
+    ],
+    "documentarySourceCount": 17,
+    "additionalPhotoRequirement": "NONE_MANDATORY",
+    "remainingQualityLimit": "Best-available phone/photo-file source resolution; future improvement requires different original capture, not layout changes.",
+    "j12WeakVisuals": "REPLACED",
+    "commandBarPrevNext": "RESTORED_AND_HARDENED",
+    "serverIsolation": "release token + exact package root validation",
+    "navigationBar": "Previous/Next SVG controls enabled in integrated parent bar",
+    "typography": "RC8.5_NORMALIZED",
+    "j4_04": "WISESENSING image removed; conceptual supporting visual applied",
+    "bodyTypography": "One body token across image/no-image/statement/closing",
+    "bodyTypeface": "Pretendard Variable 1.3.9 when local font is prepared",
+    "fontBinaryBundled": false,
+    "fontPreparation": "Run PREPARE_ROOTED_FONTS.cmd once before final acceptance",
+    "bodySizeRule": {
+      "desktopAbove1500": "38px",
+      "width901to1500": "26px",
+      "width900AndBelow": "22px",
+      "sameAcrossSceneTypes": true,
+      "language": "EN"
+    }
+  },
+  "originalScore": {
+    "status": "V4_1_4MOVE_CHAPTER_SYNC_LOCK_CANDIDATE",
+    "architecture": "four independent movement files mapped to narrative chapter ranges",
+    "defaultVolumePercent": 25,
+    "movementMap": [
+      {
+        "move": "M1",
+        "name": "QUESTION",
+        "asset": "../../assets/audio/ROOTED_M1_QUESTION_04m28_CHAPTER_SYNC.mp3",
+        "sceneStart": 1,
+        "sceneEnd": 24,
+        "startId": "cover",
+        "endId": "j2-close",
+        "storyTimeStart": "00:00",
+        "storyTimeEnd": "04:28",
+        "journeys": "Opening + J0 + J1 + J2",
+        "endSilenceSeconds": 1.5
+      },
+      {
+        "move": "M2",
+        "name": "CONNECTION",
+        "asset": "../../assets/audio/ROOTED_M2_CONNECTION_05m56_CHAPTER_SYNC.mp3",
+        "sceneStart": 25,
+        "sceneEnd": 58,
+        "startId": "j3-open",
+        "endId": "j7-06",
+        "storyTimeStart": "04:28",
+        "storyTimeEnd": "10:24",
+        "journeys": "J3 + J4 + J5 + J6 + J7",
+        "endSilenceSeconds": 1.5
+      },
+      {
+        "move": "M3",
+        "name": "PROOF",
+        "asset": "../../assets/audio/ROOTED_M3_PROOF_05m33_CHAPTER_SYNC.mp3",
+        "sceneStart": 59,
+        "sceneEnd": 85,
+        "startId": "j8-open",
+        "endId": "j11-close",
+        "storyTimeStart": "10:24",
+        "storyTimeEnd": "15:57",
+        "journeys": "J8 + J9 + J10 + J11",
+        "endSilenceSeconds": 1.5
+      },
+      {
+        "move": "M4",
+        "name": "RETURN / PASSING HOPE",
+        "asset": "../../assets/audio/ROOTED_M4_RETURN_01m51_CHAPTER_SYNC.mp3",
+        "sceneStart": 86,
+        "sceneEnd": 94,
+        "startId": "j12-open",
+        "endId": "final-resolution",
+        "storyTimeStart": "15:57",
+        "storyTimeEnd": "17:48",
+        "journeys": "J12 + Passing Hope + Final Resolution",
+        "endSilenceSeconds": 0
+      }
+    ],
+    "manualNavigationSync": true,
+    "movementSwitchesAtSceneBoundary": true,
+    "selfCrossfade": false,
+    "sha256": {
+      "ROOTED_M1_QUESTION_04m28_CHAPTER_SYNC.mp3": "eb7ef4c0440ead1ba7fee76534d43d96b141f43bd5b88f0d89a3ec4ec43a5b3c",
+      "ROOTED_M2_CONNECTION_05m56_CHAPTER_SYNC.mp3": "c3faebba42a80eba63b29f091c6d641440e4ca1f2def44179ceba4b82d9747cc",
+      "ROOTED_M3_PROOF_05m33_CHAPTER_SYNC.mp3": "ddc9d36898e2ecf480440ab57fbc60b82aab11ea00ebf1bc8aaca6c0c7a463e0",
+      "ROOTED_M4_RETURN_01m51_CHAPTER_SYNC.mp3": "519790c7188b374688ee9aa357f7f619832c131f585bef73e732f7357a147a72"
+    },
+    "release": "v2.1.20 RC1"
+  },
+  "runtimeFix": "Restores cur/preloadImages/showUI/safe/markup utilities accidentally removed from EN app.js in v2.1.15.",
+  "typographyLock": {
+    "generalBodyPx": {
+      "desktop": 28,
+      "mid": 21,
+      "small": 18
+    },
+    "appliesTo": "image/no-image/statement/closing general body",
+    "exceptions": {
+      "OpeningStatement": {
+        "desktop": 32,
+        "mid": 23,
+        "small": 20
+      },
+      "ALetter": {
+        "desktop": 28,
+        "mid": 20,
+        "small": 18
+      },
+      "FinalResolution": {
+        "desktop": 32,
+        "mid": 23,
+        "small": 19
+      }
+    }
+  },
+  "releaseStatus": "RC1",
+  "releaseCleanup": "production-only scene QA metadata removed"
+}

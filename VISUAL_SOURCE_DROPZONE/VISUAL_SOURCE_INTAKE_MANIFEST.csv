@@ -1,0 +1,15 @@
+﻿priority,target_scene_id,required_filename,qty,subject,orientation,minimum_resolution,must_be_unique_original,final_publication_reference
+P0,bridge-who-we-are,EV2_BRIDGE_WHO_WE_ARE_GREENHOUSE_FIELD_WORK.jpg,1,DK EcoFarm greenhouse field work,single landscape,2560x1440 preferred / 1920x1080 minimum,YES,E-13
+P0,bridge-what-we-build,EV2_BRIDGE_CULTIVATION_SPACE.jpg,1,Cultivation space with crops/sensors/actuators,landscape,1920x1080 minimum,YES,E-14
+P0,bridge-what-we-build,EV2_BRIDGE_MACHINE_ROOM.jpg,1,Machine room / nutrient solution / pumps / controllers,landscape,1920x1080 minimum,YES,E-14
+P0,bridge-what-we-build,EV2_BRIDGE_CONTROL_OVERSIGHT.jpg,1,Actual FarmTOS/FarmTOS-ON control & oversight,landscape or screen+context,1920x1080 minimum,YES,E-14
+P0,j2-01,EV2_J2_01_UZBEKISTAN_FIELD_SITE_UNIQUE.jpg,1,Uzbekistan AKIS greenhouse/site; not reused in proof block,landscape,1920x1080 minimum,YES,E-8
+P0,j2-05,EV2_J2_05_UZBEKISTAN_LOCAL_KNOWLEDGE_UNIQUE.jpg,1,Local crop/field learning or knowledge-transfer detail,landscape,1920x1080 minimum,YES,Journey 2
+P0,j4-01,EV2_J4_01_REAL_SENSOR_CONTROL_INSTALLATION.jpg,1,Actual greenhouse sensor/control installation,portrait or landscape,1920px long edge minimum,YES,E-17
+P0,j5-06,EV2_J5_06_REAL_CONTROLLER_OR_FARMTOS_OPERATION.jpg,1,Actual controller / FarmTOS operation context,portrait or landscape,1920px long edge minimum,YES,E-20
+P0,proof-real-environments,EV2_PROOF_REAL_ENVIRONMENTS_TOMATO_GREENHOUSE.jpg,1,Real tomato greenhouse or equivalent final publication proof site,landscape,2560x1440 preferred,YES,E-29
+P0,proof-test-adjust,EV2_PROOF_EQUIPMENT_TEST.jpg,1,Equipment test,landscape,1920x1080 minimum,YES,E-30
+P0,proof-test-adjust,EV2_PROOF_FIELD_SENSOR_CHECK.jpg,1,Field sensor check,landscape,1920x1080 minimum,YES,E-30
+P0,proof-test-adjust,EV2_PROOF_DATA_VERIFICATION.jpg,1,Data verification / engineering review,landscape,1920x1080 minimum,YES,E-30
+P0,proof-across-borders,EV2_PROOF_UZBEKISTAN_FIELD_SITE_UNIQUE.jpg,1,Uzbekistan field site; different original from J2-01,landscape,1920x1080 minimum,YES,E-31
+P0,proof-across-borders,EV2_PROOF_UZBEKISTAN_TECH_DIALOGUE_UNIQUE.jpg,1,Uzbekistan technical dialogue/training; unique original,landscape,1920x1080 minimum,YES,E-31

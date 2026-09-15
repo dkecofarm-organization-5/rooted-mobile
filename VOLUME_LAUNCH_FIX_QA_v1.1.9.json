@@ -1,0 +1,17 @@
+{
+  "release": "ROOTED KR/EN/RU Integrated Exhibition Player v1.1.9 Volume Launch Fix",
+  "volumeControlsConfirmedInDOM": true,
+  "volumeControls": [
+    "Mute/Unmute",
+    "Volume-",
+    "Current %",
+    "Volume+"
+  ],
+  "range": "0-100%",
+  "step": "5%",
+  "rootCause": "v1.1.8 launcher reused v1.1.7 state/server",
+  "stateFolder": "%LOCALAPPDATA%\\DK EcoFarm\\ROOTED Integrated Exhibition v1.1.9\\State",
+  "releaseQuery": "1.1.9",
+  "healthMarker": "ROOTED_MANAGER_V119_OK",
+  "oldServerReusePrevented": true
+}

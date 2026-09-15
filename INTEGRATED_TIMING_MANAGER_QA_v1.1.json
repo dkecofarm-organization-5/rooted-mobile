@@ -1,0 +1,51 @@
+{
+  "release": "ROOTED KR/EN/RU Integrated Exhibition Player v1.1 WITH TIMING MANAGER",
+  "languages": [
+    "KR",
+    "EN",
+    "RU"
+  ],
+  "sceneCountPerLanguage": 89,
+  "sceneParity": true,
+  "runtimeCurrent": {
+    "KR": "13:57",
+    "EN": "16:31",
+    "RU": "15:04"
+  },
+  "timingManager": {
+    "perLanguageIndependent": true,
+    "saveTargets": {
+      "KR": [
+        "runtime/KR/data.json",
+        "runtime/KR/data.js"
+      ],
+      "EN": [
+        "runtime/EN/data.json",
+        "runtime/EN/data.js"
+      ],
+      "RU": [
+        "runtime/RU/data.json",
+        "runtime/RU/data.js"
+      ]
+    },
+    "backupPerLanguage": "data_before_timing_manager.json",
+    "durationRange": "3–60 sec",
+    "step": "0.5 sec",
+    "recommendedReset": true,
+    "directPlayerPreview": true
+  },
+  "bottomCommandBar": {
+    "persistentDuringPlayback": true,
+    "controls": [
+      "KR",
+      "EN",
+      "RU",
+      "Pause/Resume",
+      "Restart",
+      "Stop",
+      "Fullscreen"
+    ]
+  },
+  "pythonRequired": false,
+  "jsSyntax": "PASS"
+}
